@@ -35,49 +35,39 @@
             // 
             // button1
             // 
-            button1.Location = new Point(94, 269);
-            button1.Margin = new Padding(4, 5, 4, 5);
+            button1.Location = new Point(66, 161);
             button1.Name = "button1";
-            button1.Size = new Size(134, 73);
+            button1.Size = new Size(94, 44);
             button1.TabIndex = 0;
             button1.Text = "luis velado ";
             button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-
-            button2.Location = new Point(94, 130);
-            button2.Margin = new Padding(4, 5, 4, 5);
+            button2.Location = new Point(59, 71);
             button2.Name = "button2";
-            button2.Size = new Size(134, 73);
-
-            button2.Location = new Point(263, 137);
-            button2.Name = "button2";
-            button2.Size = new Size(83, 28);
-
+            button2.Size = new Size(101, 38);
             button2.TabIndex = 1;
             button2.Text = "Ronald";
             button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            button3.Location = new Point(94, 418);
-            button3.Margin = new Padding(4, 5, 4, 5);
+            button3.Location = new Point(66, 251);
             button3.Name = "button3";
-            button3.Size = new Size(134, 73);
+            button3.Size = new Size(94, 44);
             button3.TabIndex = 2;
             button3.Text = "Erick";
             button3.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1321, 788);
+            ClientSize = new Size(925, 449);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Margin = new Padding(4, 5, 4, 5);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;

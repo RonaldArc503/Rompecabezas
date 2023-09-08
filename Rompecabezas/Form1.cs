@@ -9,7 +9,7 @@ namespace Rompecabezas
 
         private void Form1_Load(object sender, EventArgs e)
         {
-                //no hay q copiar y pegar, solo tomar ideas y aplicar nuestra logica
+            //no hay q copiar y pegar, solo tomar ideas y aplicar nuestra logica
         }
     }
 }

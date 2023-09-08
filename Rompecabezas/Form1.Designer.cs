@@ -45,10 +45,16 @@
             // 
             // button2
             // 
+
             button2.Location = new Point(94, 130);
             button2.Margin = new Padding(4, 5, 4, 5);
             button2.Name = "button2";
             button2.Size = new Size(134, 73);
+
+            button2.Location = new Point(263, 137);
+            button2.Name = "button2";
+            button2.Size = new Size(83, 28);
+
             button2.TabIndex = 1;
             button2.Text = "Ronald";
             button2.UseVisualStyleBackColor = true;

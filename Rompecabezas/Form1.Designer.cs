@@ -45,12 +45,22 @@
             // 
             // button2
             // 
+
             this.button2.Location = new System.Drawing.Point(66, 84);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(101, 38);
             this.button2.TabIndex = 1;
             this.button2.Text = "Ronald";
             this.button2.UseVisualStyleBackColor = true;
+
+            button2.Location = new Point(66, 84);
+            button2.Name = "button2";
+            button2.Size = new Size(101, 38);
+            button2.TabIndex = 1;
+            button2.Text = "Ronald";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+
             // 
             // button3
             // 
@@ -72,6 +82,7 @@
             // 
             // Form1
             // 
+
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(925, 449);
@@ -82,6 +93,18 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+
+
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(858, 449);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            ResumeLayout(false);
 
         }
 

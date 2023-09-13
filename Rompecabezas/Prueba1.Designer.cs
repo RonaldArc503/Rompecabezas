@@ -530,7 +530,7 @@
             Controls.Add(picture1);
             Controls.Add(picture0);
             Name = "Prueba1";
-            Text = "Prueba1";
+            Text = "Difícil";
             Load += Prueba1_Load;
             ((System.ComponentModel.ISupportInitialize)picture0).EndInit();
             ((System.ComponentModel.ISupportInitialize)picture1).EndInit();

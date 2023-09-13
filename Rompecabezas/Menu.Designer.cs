@@ -84,6 +84,7 @@
             Rp1.TabIndex = 6;
             Rp1.Text = "Fácil";
             Rp1.UseVisualStyleBackColor = true;
+            Rp1.Click += Rp1_Click;
             // 
             // Rp2
             // 
@@ -93,6 +94,7 @@
             Rp2.TabIndex = 7;
             Rp2.Text = "Medio";
             Rp2.UseVisualStyleBackColor = true;
+            Rp2.Click += Rp2_Click;
             // 
             // Rp3
             // 
@@ -102,6 +104,7 @@
             Rp3.TabIndex = 8;
             Rp3.Text = "Difícil";
             Rp3.UseVisualStyleBackColor = true;
+            Rp3.Click += Rp3_Click;
             // 
             // pictureBox4
             // 
@@ -123,6 +126,7 @@
             Close.TabIndex = 12;
             Close.Text = "Cerrar";
             Close.UseVisualStyleBackColor = true;
+            Close.Click += Close_Click;
             // 
             // Menu
             // 

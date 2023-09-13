@@ -16,5 +16,12 @@ namespace Rompecabezas
         {
             InitializeComponent();
         }
+
+        private void Back_Click(object sender, EventArgs e)
+        { //Volver al menu principal//
+            Menu Mn = new Menu();
+            Mn.Show();
+            Hide();
+        }
     }
 }

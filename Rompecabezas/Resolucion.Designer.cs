@@ -29,7 +29,18 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Resolucion));
+            Back = new Button();
             SuspendLayout();
+            // 
+            // Back
+            // 
+            Back.Location = new Point(0, 0);
+            Back.Name = "Back";
+            Back.Size = new Size(75, 23);
+            Back.TabIndex = 0;
+            Back.Text = "Atrás";
+            Back.UseVisualStyleBackColor = true;
+            Back.Click += Back_Click;
             // 
             // Resolucion
             // 
@@ -37,11 +48,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(800, 450);
+            Controls.Add(Back);
             Name = "Resolucion";
             Text = "Resolucion";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button Back;
     }
 }

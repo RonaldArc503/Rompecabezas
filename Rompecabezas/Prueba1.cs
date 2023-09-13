@@ -217,6 +217,13 @@ namespace Rompecabezas
             picture20.Image = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
         }
 
+        private void Back_Click(object sender, EventArgs e)
+        { //volver al menu principal//
+            Menu Mn = new Menu();
+            Mn.Show();
+            Hide();
+        }
+
         //termina
 
 

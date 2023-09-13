@@ -61,6 +61,7 @@
             pictureBox25 = new PictureBox();
             pictureBox26 = new PictureBox();
             pictureBox27 = new PictureBox();
+            Back = new Button();
             ((System.ComponentModel.ISupportInitialize)picture0).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picture1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picture2).BeginInit();
@@ -491,12 +492,23 @@
             pictureBox27.TabIndex = 29;
             pictureBox27.TabStop = false;
             // 
+            // Back
+            // 
+            Back.Location = new Point(1135, 405);
+            Back.Name = "Back";
+            Back.Size = new Size(75, 23);
+            Back.TabIndex = 32;
+            Back.Text = "Atrás";
+            Back.UseVisualStyleBackColor = true;
+            Back.Click += Back_Click;
+            // 
             // Prueba1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1245, 440);
+            Controls.Add(Back);
             Controls.Add(pictureBox25);
             Controls.Add(pictureBox26);
             Controls.Add(pictureBox27);
@@ -604,5 +616,6 @@
         private PictureBox pictureBox25;
         private PictureBox pictureBox26;
         private PictureBox pictureBox27;
+        private Button Back;
     }
 }

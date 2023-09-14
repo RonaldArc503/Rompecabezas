@@ -16,6 +16,7 @@ namespace Rompecabezas
         public Menu()
         {
             InitializeComponent();
+            gbgrupo.BackColor = System.Drawing.Color.Transparent;
         }
 
         private void Menu_Load(object sender, EventArgs e)

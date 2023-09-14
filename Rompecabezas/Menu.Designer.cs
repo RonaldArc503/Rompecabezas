@@ -47,10 +47,9 @@
             // 
             pictureBox3.BorderStyle = BorderStyle.Fixed3D;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(700, 64);
-            pictureBox3.Margin = new Padding(4, 5, 4, 5);
+            pictureBox3.Location = new Point(490, 38);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(197, 197);
+            pictureBox3.Size = new Size(139, 120);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 5;
             pictureBox3.TabStop = false;
@@ -59,10 +58,9 @@
             // 
             pictureBox2.BorderStyle = BorderStyle.Fixed3D;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(434, 64);
-            pictureBox2.Margin = new Padding(4, 5, 4, 5);
+            pictureBox2.Location = new Point(304, 38);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(197, 197);
+            pictureBox2.Size = new Size(139, 120);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 4;
             pictureBox2.TabStop = false;
@@ -71,10 +69,9 @@
             // 
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(149, 64);
-            pictureBox1.Margin = new Padding(4, 5, 4, 5);
+            pictureBox1.Location = new Point(104, 38);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(197, 197);
+            pictureBox1.Size = new Size(139, 120);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
@@ -82,10 +79,9 @@
             // Rp1
             // 
             Rp1.ForeColor = SystemColors.ActiveCaptionText;
-            Rp1.Location = new Point(171, 317);
-            Rp1.Margin = new Padding(4, 5, 4, 5);
+            Rp1.Location = new Point(120, 190);
             Rp1.Name = "Rp1";
-            Rp1.Size = new Size(156, 67);
+            Rp1.Size = new Size(109, 40);
             Rp1.TabIndex = 6;
             Rp1.Text = "Fácil";
             Rp1.UseVisualStyleBackColor = true;
@@ -94,10 +90,9 @@
             // Rp2
             // 
             Rp2.ForeColor = SystemColors.ActiveCaptionText;
-            Rp2.Location = new Point(459, 317);
-            Rp2.Margin = new Padding(4, 5, 4, 5);
+            Rp2.Location = new Point(321, 190);
             Rp2.Name = "Rp2";
-            Rp2.Size = new Size(156, 67);
+            Rp2.Size = new Size(109, 40);
             Rp2.TabIndex = 7;
             Rp2.Text = "Medio";
             Rp2.UseVisualStyleBackColor = true;
@@ -106,10 +101,9 @@
             // Rp3
             // 
             Rp3.ForeColor = SystemColors.ActiveCaptionText;
-            Rp3.Location = new Point(709, 317);
-            Rp3.Margin = new Padding(4, 5, 4, 5);
+            Rp3.Location = new Point(496, 190);
             Rp3.Name = "Rp3";
-            Rp3.Size = new Size(165, 67);
+            Rp3.Size = new Size(116, 40);
             Rp3.TabIndex = 8;
             Rp3.Text = "Difícil";
             Rp3.UseVisualStyleBackColor = true;
@@ -117,10 +111,9 @@
             // 
             // btncerrar
             // 
-            btncerrar.Location = new Point(1178, 742);
-            btncerrar.Margin = new Padding(4, 5, 4, 5);
+            btncerrar.Location = new Point(825, 445);
             btncerrar.Name = "btncerrar";
-            btncerrar.Size = new Size(202, 96);
+            btncerrar.Size = new Size(141, 58);
             btncerrar.TabIndex = 12;
             btncerrar.Text = "Cerrar";
             btncerrar.UseVisualStyleBackColor = true;
@@ -138,25 +131,26 @@
             gbgrupo.Controls.Add(Rp1);
             gbgrupo.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             gbgrupo.ForeColor = SystemColors.ButtonFace;
-            gbgrupo.Location = new Point(268, 199);
+            gbgrupo.Location = new Point(188, 119);
+            gbgrupo.Margin = new Padding(2, 2, 2, 2);
             gbgrupo.Name = "gbgrupo";
-            gbgrupo.Size = new Size(1062, 428);
+            gbgrupo.Padding = new Padding(2, 2, 2, 2);
+            gbgrupo.Size = new Size(743, 257);
             gbgrupo.TabIndex = 14;
             gbgrupo.TabStop = false;
             gbgrupo.Text = "niveles de juego";
             // 
             // Menu
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1423, 874);
+            ClientSize = new Size(992, 524);
             ControlBox = false;
             Controls.Add(gbgrupo);
             Controls.Add(btncerrar);
             IsMdiContainer = true;
-            Margin = new Padding(4, 5, 4, 5);
             Name = "Menu";
             Text = "Menu";
             Load += Menu_Load;

@@ -25,21 +25,18 @@ namespace Rompecabezas
         private void iniciojuego_Load(object sender, EventArgs e)
         {
             {
-                timerTime.Enabled = true;
-
+                timerTime.Enabled = true; // habilitamos la funcion de timer 
             }
         }
-
         private void lblLinkContinuar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Hide();
-            Menu frm = new Menu();
+            this.Hide(); // esconde este formulario 
+            Menu frm = new Menu(); // creamos el objeto frm para abrir el menu 
             frm.Show();
         }
-
         private void timerTime_Tick(object sender, EventArgs e)
         {
-            switch (count)
+            switch (count) // usamos la funcion switch para iniciar el contador 
             {
                 case 0:
                     lbTexto.Text = "Verificando imagenes...";
@@ -67,12 +64,8 @@ namespace Rompecabezas
                     lblLinkContinuar.Visible = true;
                     break;
             }
-
-            count++;
-
+            count++; // incrementa el contador 
         }
-
-
     }
 }
 

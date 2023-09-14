@@ -51,7 +51,10 @@ namespace Rompecabezas
 
         private void Close_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("¿Desea abandonar la aplicación?", "puzze play", MessageBoxButtons.YesNo, MessageBoxIcon.Hand) == DialogResult.Yes)
+            {
+                Application.ExitThread();
+            }
         }
     }
 }

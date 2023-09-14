@@ -36,7 +36,7 @@
             Rp2 = new Button();
             Rp3 = new Button();
             pictureBox4 = new PictureBox();
-            Close = new Button();
+            btncerrar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -120,22 +120,22 @@
             pictureBox4.Location = new Point(0, 0);
             pictureBox4.Margin = new Padding(4, 5, 4, 5);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(713, 750);
+            pictureBox4.Size = new Size(709, 750);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 10;
             pictureBox4.TabStop = false;
             pictureBox4.Click += pictureBox4_Click;
             // 
-            // Close
+            // btncerrar
             // 
-            Close.Location = new Point(566, 692);
-            Close.Margin = new Padding(4, 5, 4, 5);
-            Close.Name = "Close";
-            Close.Size = new Size(107, 38);
-            Close.TabIndex = 12;
-            Close.Text = "Cerrar";
-            Close.UseVisualStyleBackColor = true;
-            Close.Click += Close_Click;
+            btncerrar.Location = new Point(566, 692);
+            btncerrar.Margin = new Padding(4, 5, 4, 5);
+            btncerrar.Name = "btncerrar";
+            btncerrar.Size = new Size(107, 38);
+            btncerrar.TabIndex = 12;
+            btncerrar.Text = "Cerrar";
+            btncerrar.UseVisualStyleBackColor = true;
+            btncerrar.Click += Close_Click;
             // 
             // Menu
             // 
@@ -143,7 +143,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(709, 750);
             ControlBox = false;
-            Controls.Add(Close);
+            Controls.Add(btncerrar);
             Controls.Add(Rp3);
             Controls.Add(Rp2);
             Controls.Add(Rp1);
@@ -172,6 +172,6 @@
         private Button Rp2;
         private Button Rp3;
         private PictureBox pictureBox4;
-        private Button Close;
+        private Button btncerrar;
     }
 }

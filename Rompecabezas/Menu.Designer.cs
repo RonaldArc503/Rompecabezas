@@ -47,9 +47,10 @@
             // 
             pictureBox3.BorderStyle = BorderStyle.Fixed3D;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(347, 141);
+            pictureBox3.Location = new Point(496, 235);
+            pictureBox3.Margin = new Padding(4, 5, 4, 5);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(139, 120);
+            pictureBox3.Size = new Size(197, 197);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 5;
             pictureBox3.TabStop = false;
@@ -58,9 +59,10 @@
             // 
             pictureBox2.BorderStyle = BorderStyle.Fixed3D;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(177, 141);
+            pictureBox2.Location = new Point(253, 235);
+            pictureBox2.Margin = new Padding(4, 5, 4, 5);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(139, 120);
+            pictureBox2.Size = new Size(197, 197);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 4;
             pictureBox2.TabStop = false;
@@ -69,18 +71,20 @@
             // 
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 141);
+            pictureBox1.Location = new Point(0, 235);
+            pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(139, 120);
+            pictureBox1.Size = new Size(197, 197);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
             // Rp1
             // 
-            Rp1.Location = new Point(23, 307);
+            Rp1.Location = new Point(33, 512);
+            Rp1.Margin = new Padding(4, 5, 4, 5);
             Rp1.Name = "Rp1";
-            Rp1.Size = new Size(79, 26);
+            Rp1.Size = new Size(113, 43);
             Rp1.TabIndex = 6;
             Rp1.Text = "Fácil";
             Rp1.UseVisualStyleBackColor = true;
@@ -88,9 +92,10 @@
             // 
             // Rp2
             // 
-            Rp2.Location = new Point(195, 307);
+            Rp2.Location = new Point(279, 512);
+            Rp2.Margin = new Padding(4, 5, 4, 5);
             Rp2.Name = "Rp2";
-            Rp2.Size = new Size(91, 26);
+            Rp2.Size = new Size(130, 43);
             Rp2.TabIndex = 7;
             Rp2.Text = "Medio";
             Rp2.UseVisualStyleBackColor = true;
@@ -98,9 +103,10 @@
             // 
             // Rp3
             // 
-            Rp3.Location = new Point(375, 307);
+            Rp3.Location = new Point(536, 512);
+            Rp3.Margin = new Padding(4, 5, 4, 5);
             Rp3.Name = "Rp3";
-            Rp3.Size = new Size(96, 26);
+            Rp3.Size = new Size(137, 43);
             Rp3.TabIndex = 8;
             Rp3.Text = "Difícil";
             Rp3.UseVisualStyleBackColor = true;
@@ -112,17 +118,20 @@
             pictureBox4.Dock = DockStyle.Fill;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
             pictureBox4.Location = new Point(0, 0);
+            pictureBox4.Margin = new Padding(4, 5, 4, 5);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(496, 450);
+            pictureBox4.Size = new Size(713, 750);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 10;
             pictureBox4.TabStop = false;
             pictureBox4.Click += pictureBox4_Click;
             // 
             // Close
             // 
-            Close.Location = new Point(396, 415);
+            Close.Location = new Point(566, 692);
+            Close.Margin = new Padding(4, 5, 4, 5);
             Close.Name = "Close";
-            Close.Size = new Size(75, 23);
+            Close.Size = new Size(107, 38);
             Close.TabIndex = 12;
             Close.Text = "Cerrar";
             Close.UseVisualStyleBackColor = true;
@@ -130,9 +139,9 @@
             // 
             // Menu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(496, 450);
+            ClientSize = new Size(709, 750);
             ControlBox = false;
             Controls.Add(Close);
             Controls.Add(Rp3);
@@ -143,6 +152,7 @@
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox4);
             IsMdiContainer = true;
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Menu";
             Text = "Menu";
             Load += Menu_Load;

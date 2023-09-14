@@ -36,10 +36,16 @@
             lbTexto = new Label();
             SuspendLayout();
             // 
+            // timerTime
+            // 
+            timerTime.Interval = 1500;
+            timerTime.Tick += timerTime_Tick;
+            // 
             // lblCarga
             // 
             lblCarga.AutoSize = true;
             lblCarga.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCarga.ForeColor = SystemColors.ButtonHighlight;
             lblCarga.Location = new Point(515, 582);
             lblCarga.Name = "lblCarga";
             lblCarga.Size = new Size(182, 30);
@@ -50,18 +56,22 @@
             // 
             lblLinkContinuar.AutoSize = true;
             lblLinkContinuar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblLinkContinuar.LinkColor = Color.Black;
+            lblLinkContinuar.ForeColor = SystemColors.ButtonHighlight;
+            lblLinkContinuar.LinkColor = Color.White;
             lblLinkContinuar.Location = new Point(530, 631);
             lblLinkContinuar.Name = "lblLinkContinuar";
             lblLinkContinuar.Size = new Size(156, 32);
             lblLinkContinuar.TabIndex = 1;
             lblLinkContinuar.TabStop = true;
             lblLinkContinuar.Text = "CONTINUAR";
+            lblLinkContinuar.Visible = false;
+            lblLinkContinuar.LinkClicked += lblLinkContinuar_LinkClicked;
             // 
             // lbTexto
             // 
             lbTexto.AutoSize = true;
             lbTexto.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lbTexto.ForeColor = SystemColors.ButtonHighlight;
             lbTexto.Location = new Point(775, 582);
             lbTexto.Name = "lbTexto";
             lbTexto.Size = new Size(0, 32);
@@ -80,6 +90,7 @@
             Controls.Add(lblCarga);
             Name = "iniciojuego";
             Text = "inicio";
+            Load += iniciojuego_Load;
             ResumeLayout(false);
             PerformLayout();
         }

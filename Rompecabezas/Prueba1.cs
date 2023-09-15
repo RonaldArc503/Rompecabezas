@@ -8,19 +8,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+using System;
+using System.Windows.Forms;
+
 namespace Rompecabezas
 {
     public partial class Prueba1 : Form
     {
+        //private Image temporalImage;
+        private PictureBox origenPictureBox; // PictureBox de origen o el que seleccionamos primero para el arrastre
+
         public Prueba1()
         {
             InitializeComponent();
         }
 
-
-
         private void Prueba1_Load(object sender, EventArgs e)
         {
+
+
+            // AllowDrop con eso habilitamos lo de poder arrastrar y soltar lo de las picture
             picture0.AllowDrop = true;
             picture1.AllowDrop = true;
             picture2.AllowDrop = true;
@@ -43,192 +51,66 @@ namespace Rompecabezas
             picture19.AllowDrop = true;
             picture20.AllowDrop = true;
 
+            //img es de donde se arrastraran
+
+            img1.AllowDrop = true;
+            img2.AllowDrop = true;
+            img3.AllowDrop = true;
+            img4.AllowDrop = true;
+            img5.AllowDrop = true;
+            img6.AllowDrop = true;
+            img7.AllowDrop = true;
+            img8.AllowDrop = true;
+            img9.AllowDrop = true;
+            img10.AllowDrop = true;
+            img11.AllowDrop = true;
+            img12.AllowDrop = true;
+            img13.AllowDrop = true;
+            img14.AllowDrop = true;
+            img15.AllowDrop = true;
+            img16.AllowDrop = true;
+            img17.AllowDrop = true;
+            img18.AllowDrop = true;
+            img19.AllowDrop = true;
+
 
         }
 
-
-        // Efecto a entrar a Picture x
-        private void all_img_DragEnter(object sender, DragEventArgs e)
+        private void PictureBox(PictureBox pictureBox)  //se crea un metodo PictureBox en donde configuraremos
         {
-            e.Effect = DragDropEffects.Move;
+
+            pictureBox.AllowDrop = true;
+            //aqui los eventos
+            pictureBox.DragEnter += PictureBox_DragEnter;
+            pictureBox.DragDrop += PictureBox_DragDrop;
+            pictureBox.MouseDown += PictureBox_MouseDown;
         }
 
-
-        private void picture0_DragDrop(object sender, DragEventArgs e)
+        private void PictureBox_DragEnter(object sender, DragEventArgs e)
         {
-            picture0.Image = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
-
-
+            e.Effect = DragDropEffects.Move;    //creamos el efecto de mover 
         }
 
-
-
-
-
-        private void picture2_DragDrop(object sender, DragEventArgs e)
+        private void PictureBox_DragDrop(object sender, DragEventArgs e)
         {
-            picture2.Image = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
+            PictureBox laimgPictureBox = (PictureBox)sender;
 
-        }
-
-        private void picture3_DragDrop(object sender, DragEventArgs e)
-        {
-            picture3.Image = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
-            // e.Effect = DragDropEffects.Move;// <>
-        }
-        private void picture4_DragDrop(object sender, DragEventArgs e)
-        {
-            picture4.Image = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
-            //e.Effect = DragDropEffects.Move;// <>
+            // Se hace elintercambio de origen a donde la mandaremos
+            Image imagentemporal = laimgPictureBox.Image;
+            laimgPictureBox.Image = origenPictureBox.Image;
+            origenPictureBox.Image = imagentemporal;
         }
 
+        private void PictureBox_MouseDown(object sender, MouseEventArgs e)
+        {
+            origenPictureBox = (PictureBox)sender;
 
-
-
-
-
-
-
-        private void picture1_DragDrop(object sender, DragEventArgs e)
-        {
-            picture1.Image = (Bitmap)e.Data.GetData(DataFormats.Bitmap);  // <>
-
+            if (origenPictureBox.Image != null) //hacemos la condicion si origendelaimagen no esta vacio osea si esta vacio no lo hara porq no hay nada
+            {
+                // Inicia el arraste de la imgg
+                origenPictureBox.DoDragDrop(origenPictureBox.Image, DragDropEffects.Move);
+            }
         }
-
-
-
-        // regresar foto e eliminar 
-        private void picture0_MouseDown(object sender, MouseEventArgs e)
-        {
-            picture0.DoDragDrop(picture0.Image, DragDropEffects.Move);
-            picture0.Image = null;
-        }
-        private void picture1_MouseDown(object sender, MouseEventArgs e)
-        {
-            picture1.DoDragDrop(picture1.Image, DragDropEffects.Move);
-            picture1.Image = null; // quita imagen del picture 1 al pasarlo a picture 0 "la grande foto"
-
-        }
-
-        private void picture2_MouseDown(object sender, MouseEventArgs e)
-        {
-            picture2.DoDragDrop(picture2.Image, DragDropEffects.Move);
-            picture2.Image = null;
-        }
-
-        private void picture3_MouseDown(object sender, MouseEventArgs e)
-        {
-            picture3.DoDragDrop(picture3.Image, DragDropEffects.Move);
-            picture3.Image = null;
-        }
-
-        private void picture4_MouseDown(object sender, MouseEventArgs e)
-        {
-            picture4.DoDragDrop(picture4.Image, DragDropEffects.Move);
-            picture4.Image = null;
-        }
-
-        private void picture5_MouseDown(object sender, MouseEventArgs e)
-        {
-            picture5.DoDragDrop(picture5.Image, DragDropEffects.Move);
-            picture5.Image = null;
-        }
-
-        private void picture6_MouseDown(object sender, MouseEventArgs e)
-        {
-            picture6.DoDragDrop(picture6.Image, DragDropEffects.Move);
-            picture6.Image = null;
-        }
-
-        private void picture7_MouseDown(object sender, MouseEventArgs e)
-        {
-            picture7.DoDragDrop(picture7.Image, DragDropEffects.Move);
-            picture7.Image = null;
-        }
-
-        private void picture8_MouseDown(object sender, MouseEventArgs e)
-        {
-            picture8.DoDragDrop(picture8.Image, DragDropEffects.Move);
-            picture8.Image = null;
-        }
-        //DragDrop part
-        private void picture5_DragDrop(object sender, DragEventArgs e)
-        {
-            picture5.Image = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
-        }
-        private void picture6_DragDrop(object sender, DragEventArgs e)
-        {
-            picture6.Image = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
-        }
-        private void picture7_DragDrop(object sender, DragEventArgs e)
-        {
-            picture7.Image = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
-        }
-        private void picture8_DragDrop(object sender, DragEventArgs e)
-        {
-            picture8.Image = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
-        }
-        private void picture9_DragDrop(object sender, DragEventArgs e)
-        {
-            picture9.Image = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
-        }
-        private void picture10_DragDrop(object sender, DragEventArgs e)
-        {
-            picture10.Image = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
-        }
-        private void picture11_DragDrop(object sender, DragEventArgs e)
-        {
-            picture11.Image = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
-        }
-        private void picture12_DragDrop(object sender, DragEventArgs e)
-        {
-            picture12.Image = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
-        }
-        private void picture13_DragDrop(object sender, DragEventArgs e)
-        {
-            picture13.Image = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
-        }
-        private void picture14_DragDrop(object sender, DragEventArgs e)
-        {
-            picture14.Image = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
-        }
-        private void picture15_DragDrop(object sender, DragEventArgs e)
-        {
-            picture15.Image = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
-        }
-        private void picture16_DragDrop(object sender, DragEventArgs e)
-        {
-            picture16.Image = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
-        }
-        private void picture17_DragDrop(object sender, DragEventArgs e)
-        {
-            picture17.Image = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
-        }
-        private void picture18_DragDrop(object sender, DragEventArgs e)
-        {
-            picture18.Image = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
-        }
-        private void picture19_DragDrop(object sender, DragEventArgs e)
-        {
-            picture19.Image = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
-        }
-        private void picture20_DragDrop(object sender, DragEventArgs e)
-        {
-            picture20.Image = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
-        }
-
-        private void Back_Click(object sender, EventArgs e)
-        { //volver al menu principal//
-            Menu Mn = new Menu();
-            Mn.Show();
-            Hide();
-        }
-
-        //termina
-
-
-
-
     }
 }
 

@@ -36,7 +36,7 @@ namespace Rompecabezas
         }
         private void timerTime_Tick(object sender, EventArgs e)
         {
-            switch (count) // usamos la funcion switch para iniciar el contador 
+            switch (count) // usamos switch para iniciar el contador 
             {
                 case 0:
                     lbTexto.Text = "Verificando imagenes...";
@@ -59,7 +59,7 @@ namespace Rompecabezas
                     lblCarga.Text = "Cargando un " + (count + 96) + " %";
                     break;
                 case 6:
-                    timerTime.Enabled = false;
+                    timerTime.Enabled = false; //finaliza el contador 
                     lbTexto.Visible = false;
                     lblLinkContinuar.Visible = true;
                     break;

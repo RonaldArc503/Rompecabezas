@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 using System;
 using System.Windows.Forms;
+using System.Linq.Expressions;
 
 namespace Rompecabezas
 {
@@ -18,15 +19,20 @@ namespace Rompecabezas
     {
         //private Image temporalImage;
         private PictureBox origenPictureBox; // PictureBox de origen o el que seleccionamos primero para el arrastre
-
+        System.Diagnostics.Stopwatch timer = new System.Diagnostics.Stopwatch();
         public Prueba1()
         {
             InitializeComponent();
+            lblTiempoTranscurrido.Text = "00:00";
         }
 
         private void Prueba1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void iniciarjuego()
+        {
 
             // AllowDrop con eso habilitamos lo de poder arrastrar y soltar lo de las picture
             picture0.AllowDrop = true;
@@ -118,8 +124,8 @@ namespace Rompecabezas
 
         private void btnReorganizar_Click(object sender, EventArgs e)
         {
-            timer1.Start();
-
+            iniciarjuego();
+            timerControl.Enabled = true;
             // Lista de PictureBox con las img a arrastrar o
             List<PictureBox> pictureBoxes = new List<PictureBox>
     {
@@ -178,12 +184,77 @@ namespace Rompecabezas
                 button1.Enabled = false;
             }
         }
+
+
+        private void BlockGame()
+        {
+            img1.AllowDrop = false;
+            img2.AllowDrop = false;
+            img3.AllowDrop = false;
+            img4.AllowDrop = false;
+            img5.AllowDrop = false;
+            img6.AllowDrop = false;
+            img7.AllowDrop = false;
+            img8.AllowDrop = false;
+            img9.AllowDrop = false;
+            img10.AllowDrop = false;
+            img11.AllowDrop = false;
+            img12.AllowDrop = false;
+            img13.AllowDrop = false;
+            img14.AllowDrop = false;
+            img15.AllowDrop = false;
+            img16.AllowDrop = false;
+            img17.AllowDrop = false;
+            img18.AllowDrop = false;
+            img19.AllowDrop = false;
+            picture0.AllowDrop = false;
+            picture1.AllowDrop = false;
+            picture2.AllowDrop = false;
+            picture3.AllowDrop = false;
+            picture4.AllowDrop = false;
+            picture5.AllowDrop = false;
+            picture6.AllowDrop = false;
+            picture7.AllowDrop = false;
+            picture8.AllowDrop = false;
+            picture9.AllowDrop = false;
+            picture10.AllowDrop = false;
+            picture11.AllowDrop = false;
+            picture12.AllowDrop = false;
+            picture13.AllowDrop = false;
+            picture14.AllowDrop = false;
+            picture15.AllowDrop = false;
+            picture16.AllowDrop = false;
+            picture17.AllowDrop = false;
+            picture18.AllowDrop = false;
+            picture19.AllowDrop = false;
+            picture20.AllowDrop = false;
+
+        }
+
+
         private int segundosTranscurridos = 0;
+
         private void timer1_Tick(object sender, EventArgs e)
         {
-
             segundosTranscurridos++;
-            lblTiempoTranscurrido.Text = TimeSpan.FromSeconds(segundosTranscurridos).ToString(@"hh\:mm\:ss");
+            actualizartiempo();
+            if (segundosTranscurridos >= 180)
+            {
+                timerControl.Enabled = false;
+                actualizartiempo();
+                BlockGame();
+                MessageBox.Show("se acavo el tiempo \n regresar al menu ", "puzzle play");
+                this.Hide();
+                Menu menuPrincipal = new Menu();
+                menuPrincipal.Show();
+
+            }
+        }
+        private void actualizartiempo()
+        {
+            int minutos = segundosTranscurridos / 60;
+            int segundos = segundosTranscurridos % 60;
+            lblTiempoTranscurrido.Text = string.Format("{0:00}:{1:00}", minutos, segundos);
 
         }
     }

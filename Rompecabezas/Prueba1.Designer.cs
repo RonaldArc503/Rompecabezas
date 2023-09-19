@@ -720,7 +720,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Impact", 20F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(205, 255, 146);
-            label1.Location = new Point(12, 9);
+            label1.Location = new Point(12, 18);
             label1.Name = "label1";
             label1.Size = new Size(184, 34);
             label1.TabIndex = 40;
@@ -749,7 +749,7 @@
             panel5.Controls.Add(picture18);
             panel5.Controls.Add(picture19);
             panel5.Controls.Add(picture20);
-            panel5.Location = new Point(199, 9);
+            panel5.Location = new Point(201, 52);
             panel5.Margin = new Padding(0);
             panel5.Name = "panel5";
             panel5.Size = new Size(366, 440);

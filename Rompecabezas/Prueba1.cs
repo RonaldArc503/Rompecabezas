@@ -73,7 +73,6 @@ namespace Rompecabezas
             img18.AllowDrop = true;
             img19.AllowDrop = true;
 
-
         }
 
         private void PictureBox(PictureBox pictureBox)  //se crea un metodo PictureBox en donde configuraremos

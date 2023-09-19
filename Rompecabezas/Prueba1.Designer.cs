@@ -807,7 +807,7 @@
             lblTiempoTranscurrido.BackColor = Color.Transparent;
             lblTiempoTranscurrido.Font = new Font("Impact", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblTiempoTranscurrido.ForeColor = Color.Transparent;
-            lblTiempoTranscurrido.Location = new Point(734, 194);
+            lblTiempoTranscurrido.Location = new Point(319, 9);
             lblTiempoTranscurrido.Name = "lblTiempoTranscurrido";
             lblTiempoTranscurrido.Size = new Size(123, 36);
             lblTiempoTranscurrido.TabIndex = 44;

@@ -116,6 +116,77 @@ namespace Rompecabezas
         {
 
         }
+
+        private void btnReorganizar_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+
+            // Lista de PictureBox con las img a arrastrar o
+            List<PictureBox> pictureBoxes = new List<PictureBox>
+    {
+        picture0,img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
+        img11, img12, img13, img14, img15, img16, img17, img18, img19
+    };
+
+
+            List<Image> imagenesAleatorias = pictureBoxes
+                .Select(pb => pb.Image)
+                .OrderBy(_ => Guid.NewGuid()) // Aqui  aleatoriamente se ponen
+                .ToList();
+
+
+            for (int i = 0; i < pictureBoxes.Count; i++)
+            {
+                pictureBoxes[i].Image = imagenesAleatorias[i];
+
+            }
+
+        }
+        private int vecesprecionado = 0;
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+
+
+            vecesprecionado++;
+            if (vecesprecionado % 2 == 0)
+            {
+                pista1.Visible = true;
+
+                if (vecesprecionado == 2)
+                {
+                    button1.Text = "Quedan 2 pistas";
+                }
+                if (vecesprecionado == 4)
+                {
+                    button1.Text = "Queda 1 pista";
+                }
+                if (vecesprecionado == 6)
+                {
+                    button1.Text = "Quedan 0 pistas";
+                }
+            }
+            else
+            {
+                pista1.Visible = false;
+            }
+
+
+            if (vecesprecionado == 7)
+            {
+                pista1.Visible = false;
+                button1.Enabled = false;
+            }
+        }
+        private int segundosTranscurridos = 0;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+            segundosTranscurridos++;
+            lblTiempoTranscurrido.Text = TimeSpan.FromSeconds(segundosTranscurridos).ToString(@"hh\:mm\:ss");
+
+        }
     }
 }
 

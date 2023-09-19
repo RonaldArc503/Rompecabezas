@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Prueba1));
             picture0 = new PictureBox();
             picture1 = new PictureBox();
@@ -71,6 +72,11 @@
             img17 = new PictureBox();
             label1 = new Label();
             panel5 = new Panel();
+            pista1 = new PictureBox();
+            btnReorganizar = new Button();
+            button1 = new Button();
+            timer1 = new System.Windows.Forms.Timer(components);
+            lblTiempoTranscurrido = new Label();
             ((System.ComponentModel.ISupportInitialize)picture0).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picture1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picture2).BeginInit();
@@ -112,6 +118,7 @@
             ((System.ComponentModel.ISupportInitialize)img19).BeginInit();
             ((System.ComponentModel.ISupportInitialize)img17).BeginInit();
             panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pista1).BeginInit();
             SuspendLayout();
             // 
             // picture0
@@ -729,6 +736,7 @@
             // panel5
             // 
             panel5.BackColor = Color.FromArgb(251, 227, 75);
+            panel5.Controls.Add(pista1);
             panel5.Controls.Add(picture11);
             panel5.Controls.Add(picture1);
             panel5.Controls.Add(picture2);
@@ -755,6 +763,56 @@
             panel5.Size = new Size(366, 440);
             panel5.TabIndex = 41;
             // 
+            // pista1
+            // 
+            pista1.Image = (Image)resources.GetObject("pista1.Image");
+            pista1.Location = new Point(22, 22);
+            pista1.Name = "pista1";
+            pista1.Size = new Size(320, 400);
+            pista1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pista1.TabIndex = 44;
+            pista1.TabStop = false;
+            pista1.Visible = false;
+            // 
+            // btnReorganizar
+            // 
+            btnReorganizar.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnReorganizar.Location = new Point(590, 52);
+            btnReorganizar.Name = "btnReorganizar";
+            btnReorganizar.Size = new Size(120, 52);
+            btnReorganizar.TabIndex = 42;
+            btnReorganizar.Text = "Empezar";
+            btnReorganizar.UseVisualStyleBackColor = true;
+            btnReorganizar.Click += btnReorganizar_Click;
+            // 
+            // button1
+            // 
+            button1.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Location = new Point(590, 110);
+            button1.Name = "button1";
+            button1.Size = new Size(120, 52);
+            button1.TabIndex = 43;
+            button1.Text = "Pistas 3";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // timer1
+            // 
+            timer1.Interval = 1000;
+            timer1.Tick += timer1_Tick;
+            // 
+            // lblTiempoTranscurrido
+            // 
+            lblTiempoTranscurrido.AutoSize = true;
+            lblTiempoTranscurrido.BackColor = Color.Transparent;
+            lblTiempoTranscurrido.Font = new Font("Impact", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTiempoTranscurrido.ForeColor = Color.Transparent;
+            lblTiempoTranscurrido.Location = new Point(734, 194);
+            lblTiempoTranscurrido.Name = "lblTiempoTranscurrido";
+            lblTiempoTranscurrido.Size = new Size(123, 36);
+            lblTiempoTranscurrido.TabIndex = 44;
+            lblTiempoTranscurrido.Text = "00:00:00";
+            // 
             // Prueba1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -762,6 +820,9 @@
             BackColor = Color.White;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(959, 703);
+            Controls.Add(lblTiempoTranscurrido);
+            Controls.Add(button1);
+            Controls.Add(btnReorganizar);
             Controls.Add(label1);
             Controls.Add(panel5);
             Controls.Add(img18);
@@ -829,6 +890,7 @@
             ((System.ComponentModel.ISupportInitialize)img19).EndInit();
             ((System.ComponentModel.ISupportInitialize)img17).EndInit();
             panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pista1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -880,5 +942,10 @@
         private PictureBox img17;
         private Label label1;
         private Panel panel5;
+        private Button btnReorganizar;
+        private PictureBox pista1;
+        private Button button1;
+        private System.Windows.Forms.Timer timer1;
+        private Label lblTiempoTranscurrido;
     }
 }

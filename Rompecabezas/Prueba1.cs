@@ -111,6 +111,11 @@ namespace Rompecabezas
                 origenPictureBox.DoDragDrop(origenPictureBox.Image, DragDropEffects.Move);
             }
         }
+
+        private void img15_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }
 

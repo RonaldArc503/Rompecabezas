@@ -92,7 +92,7 @@
             Rp2.FlatStyle = FlatStyle.Popup;
             Rp2.Font = new Font("Impact", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             Rp2.ForeColor = Color.White;
-            Rp2.Location = new Point(625, 462);
+            Rp2.Location = new Point(624, 445);
             Rp2.Name = "Rp2";
             Rp2.Size = new Size(109, 40);
             Rp2.TabIndex = 20;
@@ -106,7 +106,7 @@
             Rp3.FlatStyle = FlatStyle.Popup;
             Rp3.Font = new Font("Impact", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             Rp3.ForeColor = Color.White;
-            Rp3.Location = new Point(836, 462);
+            Rp3.Location = new Point(882, 445);
             Rp3.Name = "Rp3";
             Rp3.Size = new Size(116, 40);
             Rp3.TabIndex = 21;
@@ -118,9 +118,9 @@
             // 
             pictureBox2.BorderStyle = BorderStyle.Fixed3D;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(585, 266);
+            pictureBox2.Location = new Point(566, 207);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(190, 144);
+            pictureBox2.Size = new Size(233, 188);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 17;
             pictureBox2.TabStop = false;
@@ -133,7 +133,7 @@
             Rp1.FlatStyle = FlatStyle.Popup;
             Rp1.Font = new Font("Impact", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             Rp1.ForeColor = Color.White;
-            Rp1.Location = new Point(395, 462);
+            Rp1.Location = new Point(358, 445);
             Rp1.Name = "Rp1";
             Rp1.Size = new Size(109, 40);
             Rp1.TabIndex = 19;
@@ -145,9 +145,9 @@
             // 
             pictureBox3.BorderStyle = BorderStyle.Fixed3D;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(811, 266);
+            pictureBox3.Location = new Point(831, 207);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(177, 144);
+            pictureBox3.Size = new Size(212, 188);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 18;
             pictureBox3.TabStop = false;
@@ -157,9 +157,9 @@
             // 
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(359, 266);
+            pictureBox1.Location = new Point(291, 207);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(190, 144);
+            pictureBox1.Size = new Size(253, 188);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 16;
             pictureBox1.TabStop = false;
@@ -169,7 +169,7 @@
             // 
             pictureBox4.BackColor = Color.Transparent;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(1302, 687);
+            pictureBox4.Location = new Point(1285, 31);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(50, 50);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -181,7 +181,7 @@
             // 
             panel5.BackColor = Color.White;
             panel5.Controls.Add(panel6);
-            panel5.Location = new Point(273, 235);
+            panel5.Location = new Point(273, 168);
             panel5.Name = "panel5";
             panel5.Size = new Size(808, 10);
             panel5.TabIndex = 26;
@@ -216,7 +216,6 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Menú";
             WindowState = FormWindowState.Maximized;
-            Load += Menu_Load;
             panel2.ResumeLayout(false);
             panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

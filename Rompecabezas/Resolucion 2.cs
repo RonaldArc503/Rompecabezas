@@ -259,5 +259,10 @@ namespace Rompecabezas
             Mn.Show();
             Hide();
         }
+
+        private void Resolucion_2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

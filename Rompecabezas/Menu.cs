@@ -16,7 +16,7 @@ namespace Rompecabezas
         public Menu()
         {
             InitializeComponent();
-            gbgrupo.BackColor = System.Drawing.Color.Transparent;
+            // gbgrupo.BackColor = System.Drawing.Color.Transparent;
         }
 
         private void Menu_Load(object sender, EventArgs e)
@@ -52,10 +52,48 @@ namespace Rompecabezas
 
         private void Close_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void gbgrupo_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click_1(object sender, EventArgs e)
+        {
             if (MessageBox.Show("¿Desea abandonar la aplicación?", "puzzle play", MessageBoxButtons.YesNo, MessageBoxIcon.Hand) == DialogResult.Yes)
             {
                 Application.ExitThread();
             }
+        }
+
+        private void Rp1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Resolucion Rp1 = new Resolucion();
+            Rp1.Show();
+            Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Resolucion_2 Rp2 = new Resolucion_2();
+            Rp2.Show();
+            Hide();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Prueba1 Rp3 = new Prueba1();
+            Rp3.Show();
+            Hide();
+
+            //s
         }
     }
 }

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +15,7 @@ namespace Rompecabezas
     { //private Image temporalImage;
         private PictureBox origenPictureBox; // PictureBox de origen o el que seleccionamos primero para el arrastre
         System.Diagnostics.Stopwatch timer = new System.Diagnostics.Stopwatch();
+        SoundPlayer sonido = new SoundPlayer(Properties.Resources.MusicaJuegos);
         public Resolucion()
         {
             InitializeComponent();
@@ -216,7 +218,7 @@ namespace Rompecabezas
                 this.Hide();
                 Menu menuPrincipal = new Menu();
                 menuPrincipal.Show();
-
+                sonido.Stop();
             }
         }
         private void actualizartiempo()

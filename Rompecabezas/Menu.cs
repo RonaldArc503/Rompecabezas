@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Rompecabezas.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Media;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,18 +14,22 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Rompecabezas
 {
+    
     public partial class Menu : Form
     {
+
+        SoundPlayer sonido = new SoundPlayer(Properties.Resources.MusicaMenu);
+
         public Menu()
-        {
+        {   
             InitializeComponent();
-            // gbgrupo.BackColor = System.Drawing.Color.Transparent;
-            SoundPlayer sonido = new SoundPlayer();
+
+            
         }
 
         private void Menu_Load(object sender, EventArgs e)
         {
-
+            sonido.Play();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -36,6 +42,7 @@ namespace Rompecabezas
             Resolucion Rp1 = new Resolucion();
             Rp1.Show();
             Hide();
+            sonido.Stop();
         }
 
         private void Rp2_Click(object sender, EventArgs e)
@@ -43,6 +50,7 @@ namespace Rompecabezas
             Resolucion_2 Rp2 = new Resolucion_2();
             Rp2.Show();
             Hide();
+            sonido.Stop();
         }
 
         private void Rp3_Click(object sender, EventArgs e)
@@ -50,6 +58,7 @@ namespace Rompecabezas
             Prueba1 Rp3 = new Prueba1();
             Rp3.Show();
             Hide();
+            sonido.Stop();
         }
 
         private void Close_Click(object sender, EventArgs e)

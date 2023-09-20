@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using System;
 using System.Windows.Forms;
 using System.Linq.Expressions;
+using System.Media;
 
 namespace Rompecabezas
 {
@@ -20,10 +21,12 @@ namespace Rompecabezas
         //private Image temporalImage;
         private PictureBox origenPictureBox; // PictureBox de origen o el que seleccionamos primero para el arrastre
         System.Diagnostics.Stopwatch timer = new System.Diagnostics.Stopwatch();
+        SoundPlayer sonido = new SoundPlayer(Properties.Resources.MusicaJuegos);
         public Prueba1()
         {
             InitializeComponent();
             lblTiempoTranscurrido.Text = "00:00";
+            sonido.Play();
         }
 
         private void Prueba1_Load(object sender, EventArgs e)
@@ -248,6 +251,7 @@ namespace Rompecabezas
                 this.Hide();
                 Menu menuPrincipal = new Menu();
                 menuPrincipal.Show();
+                sonido.Stop();
 
             }
         }

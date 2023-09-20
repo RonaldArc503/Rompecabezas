@@ -63,7 +63,7 @@ namespace Rompecabezas
         }
 
         private void pictureBox4_Click_1(object sender, EventArgs e)
-        { 
+        {
             // Boton para cerrar la aplicación desde el menú//
             if (MessageBox.Show("¿Desea abandonar la aplicación?", "puzzle play", MessageBoxButtons.YesNo, MessageBoxIcon.Hand) == DialogResult.Yes)
             {
@@ -98,21 +98,23 @@ namespace Rompecabezas
             Rp3.Show();
             Hide();
 
-            
+
         }
 
         private void Rp2_Click_1(object sender, EventArgs e)
         {
             Resolucion_2 Rp2 = new Resolucion_2();
+            this.Close();
             Rp2.Show();
-            Hide();
+          
         }
 
         private void Rp3_Click_1(object sender, EventArgs e)
         {
             Prueba1 Rp3 = new Prueba1();
+           
+            this.Close();
             Rp3.Show();
-            Hide();
         }
     }
 }

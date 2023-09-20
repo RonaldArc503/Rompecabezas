@@ -31,7 +31,7 @@ namespace Rompecabezas
 
         private void Rp1_Click(object sender, EventArgs e)
         {
-            Prueba1 Rp1 = new Prueba1();
+            Resolucion_2 Rp1 = new Resolucion_2();
             Rp1.Show();
             Hide();
         }
@@ -45,7 +45,7 @@ namespace Rompecabezas
 
         private void Rp3_Click(object sender, EventArgs e)
         {
-            Resolucion_2 Rp3 = new Resolucion_2();
+            Prueba1 Rp3 = new Prueba1();
             Rp3.Show();
             Hide();
         }

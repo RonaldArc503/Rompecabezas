@@ -98,6 +98,7 @@
             Rp2.TabIndex = 20;
             Rp2.Text = "Medio";
             Rp2.UseVisualStyleBackColor = false;
+            Rp2.Click += Rp2_Click_1;
             // 
             // Rp3
             // 
@@ -111,6 +112,7 @@
             Rp3.TabIndex = 21;
             Rp3.Text = "Difícil";
             Rp3.UseVisualStyleBackColor = false;
+            Rp3.Click += Rp3_Click_1;
             // 
             // pictureBox2
             // 

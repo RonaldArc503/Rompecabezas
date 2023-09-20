@@ -116,31 +116,6 @@ namespace Rompecabezas
 
         }
 
-        private void btnReorganizar_Click(object sender, EventArgs e)
-        {
-            iniciarjuego();
-            timerControl.Enabled = true;
-            // Lista de PictureBox con las img a arrastrar o
-            List<PictureBox> pictureBoxes = new List<PictureBox>
-    {
-        picture0,img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
-        img11, img12, img13, img14, img15, img16, img17, img18, img19
-    };
-
-
-            List<Image> imagenesAleatorias = pictureBoxes
-                .Select(pb => pb.Image)
-                .OrderBy(_ => Guid.NewGuid()) // Aqui  aleatoriamente se ponen
-                .ToList();
-
-
-            for (int i = 0; i < pictureBoxes.Count; i++)
-            {
-                pictureBoxes[i].Image = imagenesAleatorias[i];
-
-            }
-
-        }
         private int vecesprecionado = 0;
 
         private void button1_Click(object sender, EventArgs e)
@@ -263,6 +238,31 @@ namespace Rompecabezas
         private void Resolucion_2_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnReorganizar_Click_1(object sender, EventArgs e)
+        {
+            iniciarjuego();
+            timerControl.Enabled = true;
+            // Lista de PictureBox con las img a arrastrar o
+            List<PictureBox> pictureBoxes = new List<PictureBox>
+    {
+        picture0,img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
+        img11, img12, img13, img14, img15, img16, img17, img18, img19
+    };
+
+
+            List<Image> imagenesAleatorias = pictureBoxes
+                .Select(pb => pb.Image)
+                .OrderBy(_ => Guid.NewGuid()) // Aqui  aleatoriamente se ponen
+                .ToList();
+
+
+            for (int i = 0; i < pictureBoxes.Count; i++)
+            {
+                pictureBoxes[i].Image = imagenesAleatorias[i];
+
+            }
         }
     }
 }

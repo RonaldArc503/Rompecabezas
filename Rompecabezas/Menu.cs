@@ -70,7 +70,9 @@ namespace Rompecabezas
 
         private void Rp1_Click_1(object sender, EventArgs e)
         {
-
+            Resolucion Rp1 = new Resolucion();
+            Rp1.Show();
+            Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -94,6 +96,20 @@ namespace Rompecabezas
             Hide();
 
             //s
+        }
+
+        private void Rp2_Click_1(object sender, EventArgs e)
+        {
+            Resolucion_2 Rp2 = new Resolucion_2();
+            Rp2.Show();
+            Hide();
+        }
+
+        private void Rp3_Click_1(object sender, EventArgs e)
+        {
+            Prueba1 Rp3 = new Prueba1();
+            Rp3.Show();
+            Hide();
         }
     }
 }

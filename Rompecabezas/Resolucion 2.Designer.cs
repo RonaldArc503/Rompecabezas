@@ -824,7 +824,7 @@
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.ForeColor = SystemColors.ButtonFace;
+            button2.ForeColor = Color.White;
             button2.Location = new Point(590, 12);
             button2.Name = "button2";
             button2.Size = new Size(144, 69);

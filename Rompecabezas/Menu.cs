@@ -31,14 +31,14 @@ namespace Rompecabezas
 
         private void Rp1_Click(object sender, EventArgs e)
         {
-            Resolucion_2 Rp1 = new Resolucion_2();
+            Resolucion Rp1 = new Resolucion();
             Rp1.Show();
             Hide();
         }
 
         private void Rp2_Click(object sender, EventArgs e)
         {
-            Resolucion Rp2 = new Resolucion();
+            Resolucion_2 Rp2 = new Resolucion_2();
             Rp2.Show();
             Hide();
         }

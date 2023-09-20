@@ -70,7 +70,6 @@
             img16 = new PictureBox();
             img19 = new PictureBox();
             img17 = new PictureBox();
-            label1 = new Label();
             panel5 = new Panel();
             pista1 = new PictureBox();
             btnReorganizar = new Button();
@@ -722,22 +721,9 @@
             img17.DragEnter += PictureBox_DragEnter;
             img17.MouseDown += PictureBox_MouseDown;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Impact", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(205, 255, 146);
-            label1.Location = new Point(12, 18);
-            label1.Name = "label1";
-            label1.Size = new Size(184, 34);
-            label1.TabIndex = 40;
-            label1.Text = "Rompecabezas";
-            // 
             // panel5
             // 
             panel5.BackColor = Color.FromArgb(251, 227, 75);
-            panel5.Controls.Add(pista1);
             panel5.Controls.Add(picture11);
             panel5.Controls.Add(picture1);
             panel5.Controls.Add(picture2);
@@ -758,7 +744,7 @@
             panel5.Controls.Add(picture18);
             panel5.Controls.Add(picture19);
             panel5.Controls.Add(picture20);
-            panel5.Location = new Point(201, 52);
+            panel5.Location = new Point(520, 69);
             panel5.Margin = new Padding(0);
             panel5.Name = "panel5";
             panel5.Size = new Size(366, 440);
@@ -767,7 +753,7 @@
             // pista1
             // 
             pista1.Image = (Image)resources.GetObject("pista1.Image");
-            pista1.Location = new Point(22, 22);
+            pista1.Location = new Point(1009, 153);
             pista1.Name = "pista1";
             pista1.Size = new Size(320, 400);
             pista1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -778,7 +764,7 @@
             // btnReorganizar
             // 
             btnReorganizar.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btnReorganizar.Location = new Point(590, 52);
+            btnReorganizar.Location = new Point(1209, 385);
             btnReorganizar.Name = "btnReorganizar";
             btnReorganizar.Size = new Size(120, 52);
             btnReorganizar.TabIndex = 42;
@@ -789,7 +775,7 @@
             // button1
             // 
             button1.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(590, 110);
+            button1.Location = new Point(1209, 443);
             button1.Name = "button1";
             button1.Size = new Size(120, 52);
             button1.TabIndex = 43;
@@ -816,9 +802,9 @@
             // 
             // Volver
             // 
-            Volver.Location = new Point(638, 626);
+            Volver.Location = new Point(1209, 501);
             Volver.Name = "Volver";
-            Volver.Size = new Size(75, 23);
+            Volver.Size = new Size(120, 52);
             Volver.TabIndex = 45;
             Volver.Text = "Atrás";
             Volver.UseVisualStyleBackColor = true;
@@ -830,12 +816,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(284, 261);
+            ClientSize = new Size(1360, 745);
+            Controls.Add(pista1);
             Controls.Add(Volver);
             Controls.Add(lblTiempoTranscurrido);
             Controls.Add(button1);
             Controls.Add(btnReorganizar);
-            Controls.Add(label1);
             Controls.Add(panel5);
             Controls.Add(img18);
             Controls.Add(img16);
@@ -860,6 +846,7 @@
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Name = "Prueba1";
             Text = "Rompecabezas Dificil";
+            WindowState = FormWindowState.Maximized;
             Load += Prueba1_Load;
             ((System.ComponentModel.ISupportInitialize)picture0).EndInit();
             ((System.ComponentModel.ISupportInitialize)picture1).EndInit();
@@ -952,7 +939,6 @@
         private PictureBox img16;
         private PictureBox img19;
         private PictureBox img17;
-        private Label label1;
         private Panel panel5;
         private Button btnReorganizar;
         private PictureBox pista1;

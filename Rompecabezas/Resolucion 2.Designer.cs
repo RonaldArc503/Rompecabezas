@@ -805,9 +805,9 @@
             // lblTiempoTranscurrido
             // 
             lblTiempoTranscurrido.AutoSize = true;
-            lblTiempoTranscurrido.BackColor = Color.Transparent;
+            lblTiempoTranscurrido.BackColor = Color.Black;
             lblTiempoTranscurrido.Font = new Font("Impact", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTiempoTranscurrido.ForeColor = Color.Transparent;
+            lblTiempoTranscurrido.ForeColor = Color.White;
             lblTiempoTranscurrido.Location = new Point(621, 45);
             lblTiempoTranscurrido.Name = "lblTiempoTranscurrido";
             lblTiempoTranscurrido.Size = new Size(85, 36);

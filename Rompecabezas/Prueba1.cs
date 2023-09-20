@@ -265,6 +265,18 @@ namespace Rompecabezas
             Mn.Show();
             Hide();
         }
+
+        private void fin_Click(object sender, EventArgs e)
+        {
+            timerControl.Enabled = false;
+            actualizartiempo();
+            pista1.Visible = true;
+            BlockGame();
+            MessageBox.Show("¡¡¡¡FELICIDADES HAS TERMINADO EL ROMPECABEZAS!!!! \n", "puzzle play");
+            this.Hide();
+            Menu menuPrincipal = new Menu();
+            menuPrincipal.Show();
+        }
     }
 }
 

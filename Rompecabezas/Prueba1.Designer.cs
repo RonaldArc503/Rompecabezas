@@ -78,6 +78,7 @@
             lblTiempoTranscurrido = new Label();
             Volver = new Button();
             button2 = new Button();
+            fin = new Button();
             ((System.ComponentModel.ISupportInitialize)picture0).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picture1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picture2).BeginInit();
@@ -777,7 +778,7 @@
             // button1
             // 
             button1.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(771, 626);
+            button1.Location = new Point(777, 626);
             button1.Name = "button1";
             button1.Size = new Size(120, 52);
             button1.TabIndex = 43;
@@ -796,7 +797,7 @@
             lblTiempoTranscurrido.BackColor = Color.Transparent;
             lblTiempoTranscurrido.Font = new Font("Impact", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblTiempoTranscurrido.ForeColor = Color.Transparent;
-            lblTiempoTranscurrido.Location = new Point(672, 90);
+            lblTiempoTranscurrido.Location = new Point(675, 90);
             lblTiempoTranscurrido.Name = "lblTiempoTranscurrido";
             lblTiempoTranscurrido.Size = new Size(85, 36);
             lblTiempoTranscurrido.TabIndex = 44;
@@ -817,9 +818,8 @@
             // 
             button2.BackColor = Color.Black;
             button2.BackgroundImageLayout = ImageLayout.None;
-            button2.Enabled = false;
             button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
+            button2.FlatStyle = FlatStyle.Popup;
             button2.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             button2.ForeColor = Color.White;
             button2.Location = new Point(643, 57);
@@ -830,6 +830,18 @@
             button2.TextAlign = ContentAlignment.TopCenter;
             button2.UseVisualStyleBackColor = false;
             // 
+            // fin
+            // 
+            fin.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            fin.ForeColor = SystemColors.ActiveCaptionText;
+            fin.Location = new Point(651, 626);
+            fin.Name = "fin";
+            fin.Size = new Size(120, 52);
+            fin.TabIndex = 87;
+            fin.Text = "Terminar";
+            fin.UseVisualStyleBackColor = true;
+            fin.Click += fin_Click;
+            // 
             // Prueba1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -837,6 +849,7 @@
             BackColor = Color.White;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1360, 745);
+            Controls.Add(fin);
             Controls.Add(Volver);
             Controls.Add(lblTiempoTranscurrido);
             Controls.Add(button1);
@@ -969,5 +982,6 @@
         private Label lblTiempoTranscurrido;
         private Button Volver;
         private Button button2;
+        private Button fin;
     }
 }

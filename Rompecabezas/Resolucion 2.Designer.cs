@@ -78,6 +78,7 @@
             lblTiempoTranscurrido = new Label();
             timerControl = new System.Windows.Forms.Timer(components);
             button2 = new Button();
+            fin = new Button();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pista1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picture11).BeginInit();
@@ -479,7 +480,7 @@
             // 
             button1.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ForeColor = SystemColors.ActiveCaptionText;
-            button1.Location = new Point(734, 558);
+            button1.Location = new Point(740, 558);
             button1.Name = "button1";
             button1.Size = new Size(120, 52);
             button1.TabIndex = 64;
@@ -820,7 +821,6 @@
             // 
             button2.BackColor = Color.Black;
             button2.BackgroundImageLayout = ImageLayout.None;
-            button2.Enabled = false;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -833,12 +833,25 @@
             button2.TextAlign = ContentAlignment.TopCenter;
             button2.UseVisualStyleBackColor = false;
             // 
+            // fin
+            // 
+            fin.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            fin.ForeColor = SystemColors.ActiveCaptionText;
+            fin.Location = new Point(614, 558);
+            fin.Name = "fin";
+            fin.Size = new Size(120, 52);
+            fin.TabIndex = 86;
+            fin.Text = "Terminar";
+            fin.UseVisualStyleBackColor = true;
+            fin.Click += fin_Click;
+            // 
             // Resolucion_2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1364, 749);
+            Controls.Add(fin);
             Controls.Add(lblTiempoTranscurrido);
             Controls.Add(panel5);
             Controls.Add(button1);
@@ -968,5 +981,6 @@
         private Label lblTiempoTranscurrido;
         private System.Windows.Forms.Timer timerControl;
         private Button button2;
+        private Button fin;
     }
 }

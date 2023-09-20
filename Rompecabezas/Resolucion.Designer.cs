@@ -133,11 +133,8 @@
             // 
             panel5.BackColor = Color.FromArgb(251, 227, 75);
             panel5.Controls.Add(pista1);
-            panel5.Controls.Add(Volver);
             panel5.Controls.Add(picture11);
-            panel5.Controls.Add(button1);
             panel5.Controls.Add(picture1);
-            panel5.Controls.Add(btnReorganizar);
             panel5.Controls.Add(picture2);
             panel5.Controls.Add(picture3);
             panel5.Controls.Add(picture4);
@@ -655,7 +652,7 @@
             // 
             // Volver
             // 
-            Volver.Location = new Point(222, 370);
+            Volver.Location = new Point(1120, 369);
             Volver.Name = "Volver";
             Volver.Size = new Size(120, 52);
             Volver.TabIndex = 66;
@@ -665,7 +662,7 @@
             // button1
             // 
             button1.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(222, 312);
+            button1.Location = new Point(1120, 311);
             button1.Name = "button1";
             button1.Size = new Size(120, 52);
             button1.TabIndex = 64;
@@ -675,7 +672,7 @@
             // btnReorganizar
             // 
             btnReorganizar.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btnReorganizar.Location = new Point(222, 254);
+            btnReorganizar.Location = new Point(1120, 253);
             btnReorganizar.Name = "btnReorganizar";
             btnReorganizar.Size = new Size(120, 52);
             btnReorganizar.TabIndex = 63;
@@ -689,10 +686,13 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1364, 749);
             Controls.Add(panel5);
+            Controls.Add(Volver);
             Controls.Add(img18);
             Controls.Add(img16);
+            Controls.Add(button1);
             Controls.Add(img19);
             Controls.Add(img17);
+            Controls.Add(btnReorganizar);
             Controls.Add(img8);
             Controls.Add(img6);
             Controls.Add(img9);
@@ -711,7 +711,9 @@
             Controls.Add(picture0);
             Controls.Add(Back);
             Name = "Resolucion";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Resolucion";
+            WindowState = FormWindowState.Maximized;
             panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)picture11).EndInit();
             ((System.ComponentModel.ISupportInitialize)picture1).EndInit();

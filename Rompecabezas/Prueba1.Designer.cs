@@ -724,6 +724,7 @@
             // panel5
             // 
             panel5.BackColor = Color.FromArgb(251, 227, 75);
+            panel5.Controls.Add(pista1);
             panel5.Controls.Add(picture11);
             panel5.Controls.Add(picture1);
             panel5.Controls.Add(picture2);
@@ -753,7 +754,7 @@
             // pista1
             // 
             pista1.Image = (Image)resources.GetObject("pista1.Image");
-            pista1.Location = new Point(1009, 153);
+            pista1.Location = new Point(22, 22);
             pista1.Name = "pista1";
             pista1.Size = new Size(320, 400);
             pista1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -794,7 +795,7 @@
             lblTiempoTranscurrido.BackColor = Color.Transparent;
             lblTiempoTranscurrido.Font = new Font("Impact", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblTiempoTranscurrido.ForeColor = Color.Transparent;
-            lblTiempoTranscurrido.Location = new Point(319, 9);
+            lblTiempoTranscurrido.Location = new Point(665, 9);
             lblTiempoTranscurrido.Name = "lblTiempoTranscurrido";
             lblTiempoTranscurrido.Size = new Size(85, 36);
             lblTiempoTranscurrido.TabIndex = 44;
@@ -817,7 +818,6 @@
             BackColor = Color.White;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1360, 745);
-            Controls.Add(pista1);
             Controls.Add(Volver);
             Controls.Add(lblTiempoTranscurrido);
             Controls.Add(button1);

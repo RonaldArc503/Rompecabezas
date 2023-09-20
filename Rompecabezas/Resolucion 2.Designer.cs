@@ -28,15 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Resolucion_2));
             Back = new Button();
             panel5 = new Panel();
             pista1 = new PictureBox();
-            Volver = new Button();
             picture11 = new PictureBox();
-            button1 = new Button();
             picture1 = new PictureBox();
-            btnReorganizar = new Button();
             picture2 = new PictureBox();
             picture3 = new PictureBox();
             picture4 = new PictureBox();
@@ -55,6 +53,8 @@
             picture18 = new PictureBox();
             picture19 = new PictureBox();
             picture20 = new PictureBox();
+            button1 = new Button();
+            btnReorganizar = new Button();
             img18 = new PictureBox();
             img16 = new PictureBox();
             img19 = new PictureBox();
@@ -75,6 +75,8 @@
             img11 = new PictureBox();
             img1 = new PictureBox();
             picture0 = new PictureBox();
+            lblTiempoTranscurrido = new Label();
+            timerControl = new System.Windows.Forms.Timer(components);
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pista1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picture11).BeginInit();
@@ -121,9 +123,9 @@
             // 
             // Back
             // 
-            Back.Location = new Point(0, 0);
+            Back.Location = new Point(1274, 718);
             Back.Name = "Back";
-            Back.Size = new Size(75, 23);
+            Back.Size = new Size(89, 30);
             Back.TabIndex = 0;
             Back.Text = "Atrás";
             Back.UseVisualStyleBackColor = true;
@@ -133,11 +135,8 @@
             // 
             panel5.BackColor = Color.FromArgb(251, 227, 75);
             panel5.Controls.Add(pista1);
-            panel5.Controls.Add(Volver);
             panel5.Controls.Add(picture11);
-            panel5.Controls.Add(button1);
             panel5.Controls.Add(picture1);
-            panel5.Controls.Add(btnReorganizar);
             panel5.Controls.Add(picture2);
             panel5.Controls.Add(picture3);
             panel5.Controls.Add(picture4);
@@ -156,7 +155,7 @@
             panel5.Controls.Add(picture18);
             panel5.Controls.Add(picture19);
             panel5.Controls.Add(picture20);
-            panel5.Location = new Point(729, -2);
+            panel5.Location = new Point(488, 56);
             panel5.Margin = new Padding(0);
             panel5.Name = "panel5";
             panel5.Size = new Size(366, 440);
@@ -173,15 +172,6 @@
             pista1.TabStop = false;
             pista1.Visible = false;
             // 
-            // Volver
-            // 
-            Volver.Location = new Point(222, 370);
-            Volver.Name = "Volver";
-            Volver.Size = new Size(120, 52);
-            Volver.TabIndex = 66;
-            Volver.Text = "Atrás";
-            Volver.UseVisualStyleBackColor = true;
-            // 
             // picture11
             // 
             picture11.BackColor = Color.FromArgb(205, 255, 146);
@@ -194,16 +184,6 @@
             picture11.TabIndex = 11;
             picture11.TabStop = false;
             // 
-            // button1
-            // 
-            button1.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(222, 312);
-            button1.Name = "button1";
-            button1.Size = new Size(120, 52);
-            button1.TabIndex = 64;
-            button1.Text = "Pistas 3";
-            button1.UseVisualStyleBackColor = true;
-            // 
             // picture1
             // 
             picture1.BackColor = Color.FromArgb(205, 255, 146);
@@ -215,16 +195,6 @@
             picture1.SizeMode = PictureBoxSizeMode.StretchImage;
             picture1.TabIndex = 1;
             picture1.TabStop = false;
-            // 
-            // btnReorganizar
-            // 
-            btnReorganizar.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btnReorganizar.Location = new Point(222, 254);
-            btnReorganizar.Name = "btnReorganizar";
-            btnReorganizar.Size = new Size(120, 52);
-            btnReorganizar.TabIndex = 63;
-            btnReorganizar.Text = "Empezar";
-            btnReorganizar.UseVisualStyleBackColor = true;
             // 
             // picture2
             // 
@@ -442,12 +412,32 @@
             picture20.TabIndex = 20;
             picture20.TabStop = false;
             // 
+            // button1
+            // 
+            button1.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Location = new Point(734, 523);
+            button1.Name = "button1";
+            button1.Size = new Size(120, 52);
+            button1.TabIndex = 64;
+            button1.Text = "Pistas 3";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // btnReorganizar
+            // 
+            btnReorganizar.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnReorganizar.Location = new Point(488, 523);
+            btnReorganizar.Name = "btnReorganizar";
+            btnReorganizar.Size = new Size(120, 52);
+            btnReorganizar.TabIndex = 63;
+            btnReorganizar.Text = "Empezar";
+            btnReorganizar.UseVisualStyleBackColor = true;
+            // 
             // img18
             // 
             img18.BackColor = Color.FromArgb(29, 160, 190);
             img18.BorderStyle = BorderStyle.Fixed3D;
             img18.Image = (Image)resources.GetObject("img18.Image");
-            img18.Location = new Point(225, 439);
+            img18.Location = new Point(956, 314);
             img18.Name = "img18";
             img18.Size = new Size(80, 80);
             img18.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -459,7 +449,7 @@
             img16.BackColor = Color.FromArgb(29, 160, 190);
             img16.BorderStyle = BorderStyle.Fixed3D;
             img16.Image = (Image)resources.GetObject("img16.Image");
-            img16.Location = new Point(571, 441);
+            img16.Location = new Point(956, 56);
             img16.Name = "img16";
             img16.Size = new Size(80, 80);
             img16.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -471,7 +461,7 @@
             img19.BackColor = Color.FromArgb(29, 160, 190);
             img19.BorderStyle = BorderStyle.Fixed3D;
             img19.Image = (Image)resources.GetObject("img19.Image");
-            img19.Location = new Point(311, 439);
+            img19.Location = new Point(1042, 314);
             img19.Name = "img19";
             img19.Size = new Size(80, 80);
             img19.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -483,7 +473,7 @@
             img17.BackColor = Color.FromArgb(29, 160, 190);
             img17.BorderStyle = BorderStyle.Fixed3D;
             img17.Image = (Image)resources.GetObject("img17.Image");
-            img17.Location = new Point(657, 441);
+            img17.Location = new Point(1042, 56);
             img17.Name = "img17";
             img17.Size = new Size(80, 80);
             img17.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -495,7 +485,7 @@
             img8.BackColor = Color.FromArgb(29, 160, 190);
             img8.BorderStyle = BorderStyle.Fixed3D;
             img8.Image = (Image)resources.GetObject("img8.Image");
-            img8.Location = new Point(225, 353);
+            img8.Location = new Point(204, 400);
             img8.Name = "img8";
             img8.Size = new Size(80, 80);
             img8.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -507,7 +497,7 @@
             img6.BackColor = Color.FromArgb(29, 160, 190);
             img6.BorderStyle = BorderStyle.Fixed3D;
             img6.Image = (Image)resources.GetObject("img6.Image");
-            img6.Location = new Point(225, 267);
+            img6.Location = new Point(204, 314);
             img6.Name = "img6";
             img6.Size = new Size(80, 80);
             img6.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -519,7 +509,7 @@
             img9.BackColor = Color.FromArgb(29, 160, 190);
             img9.BorderStyle = BorderStyle.Fixed3D;
             img9.Image = (Image)resources.GetObject("img9.Image");
-            img9.Location = new Point(311, 353);
+            img9.Location = new Point(290, 400);
             img9.Name = "img9";
             img9.Size = new Size(80, 80);
             img9.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -531,7 +521,7 @@
             img7.BackColor = Color.FromArgb(29, 160, 190);
             img7.BorderStyle = BorderStyle.Fixed3D;
             img7.Image = (Image)resources.GetObject("img7.Image");
-            img7.Location = new Point(311, 267);
+            img7.Location = new Point(290, 314);
             img7.Name = "img7";
             img7.Size = new Size(80, 80);
             img7.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -543,7 +533,7 @@
             img14.BackColor = Color.FromArgb(29, 160, 190);
             img14.BorderStyle = BorderStyle.Fixed3D;
             img14.Image = (Image)resources.GetObject("img14.Image");
-            img14.Location = new Point(399, 527);
+            img14.Location = new Point(956, 228);
             img14.Name = "img14";
             img14.Size = new Size(80, 80);
             img14.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -555,7 +545,7 @@
             img12.BackColor = Color.FromArgb(29, 160, 190);
             img12.BorderStyle = BorderStyle.Fixed3D;
             img12.Image = (Image)resources.GetObject("img12.Image");
-            img12.Location = new Point(399, 441);
+            img12.Location = new Point(956, 142);
             img12.Name = "img12";
             img12.Size = new Size(80, 80);
             img12.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -567,7 +557,7 @@
             img10.BackColor = Color.FromArgb(29, 160, 190);
             img10.BorderStyle = BorderStyle.Fixed3D;
             img10.Image = (Image)resources.GetObject("img10.Image");
-            img10.Location = new Point(227, 527);
+            img10.Location = new Point(956, 402);
             img10.Name = "img10";
             img10.Size = new Size(80, 80);
             img10.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -579,7 +569,7 @@
             img15.BackColor = Color.FromArgb(29, 160, 190);
             img15.BorderStyle = BorderStyle.Fixed3D;
             img15.Image = (Image)resources.GetObject("img15.Image");
-            img15.Location = new Point(485, 527);
+            img15.Location = new Point(1042, 228);
             img15.Name = "img15";
             img15.Size = new Size(80, 80);
             img15.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -591,7 +581,7 @@
             img5.BackColor = Color.FromArgb(29, 160, 190);
             img5.BorderStyle = BorderStyle.Fixed3D;
             img5.Image = (Image)resources.GetObject("img5.Image");
-            img5.Location = new Point(311, 181);
+            img5.Location = new Point(290, 228);
             img5.Name = "img5";
             img5.Size = new Size(80, 80);
             img5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -603,7 +593,7 @@
             img4.BackColor = Color.FromArgb(29, 160, 190);
             img4.BorderStyle = BorderStyle.Fixed3D;
             img4.Image = (Image)resources.GetObject("img4.Image");
-            img4.Location = new Point(225, 181);
+            img4.Location = new Point(204, 228);
             img4.Name = "img4";
             img4.Size = new Size(80, 80);
             img4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -615,7 +605,7 @@
             img13.BackColor = Color.FromArgb(29, 160, 190);
             img13.BorderStyle = BorderStyle.Fixed3D;
             img13.Image = (Image)resources.GetObject("img13.Image");
-            img13.Location = new Point(485, 441);
+            img13.Location = new Point(1042, 142);
             img13.Name = "img13";
             img13.Size = new Size(80, 80);
             img13.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -627,7 +617,7 @@
             img3.BackColor = Color.FromArgb(29, 160, 190);
             img3.BorderStyle = BorderStyle.Fixed3D;
             img3.Image = (Image)resources.GetObject("img3.Image");
-            img3.Location = new Point(311, 95);
+            img3.Location = new Point(290, 142);
             img3.Name = "img3";
             img3.Size = new Size(80, 80);
             img3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -639,7 +629,7 @@
             img2.BackColor = Color.FromArgb(29, 160, 190);
             img2.BorderStyle = BorderStyle.Fixed3D;
             img2.Image = (Image)resources.GetObject("img2.Image");
-            img2.Location = new Point(225, 95);
+            img2.Location = new Point(204, 142);
             img2.Name = "img2";
             img2.Size = new Size(80, 80);
             img2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -651,7 +641,7 @@
             img11.BackColor = Color.FromArgb(29, 160, 190);
             img11.BorderStyle = BorderStyle.Fixed3D;
             img11.Image = (Image)resources.GetObject("img11.Image");
-            img11.Location = new Point(313, 527);
+            img11.Location = new Point(1042, 402);
             img11.Name = "img11";
             img11.Size = new Size(80, 80);
             img11.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -663,7 +653,7 @@
             img1.BackColor = Color.FromArgb(29, 160, 190);
             img1.BorderStyle = BorderStyle.Fixed3D;
             img1.Image = (Image)resources.GetObject("img1.Image");
-            img1.Location = new Point(311, 9);
+            img1.Location = new Point(290, 56);
             img1.Name = "img1";
             img1.Size = new Size(80, 80);
             img1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -675,20 +665,35 @@
             picture0.BackColor = Color.FromArgb(29, 160, 190);
             picture0.BorderStyle = BorderStyle.Fixed3D;
             picture0.Image = (Image)resources.GetObject("picture0.Image");
-            picture0.Location = new Point(225, 9);
+            picture0.Location = new Point(204, 56);
             picture0.Name = "picture0";
             picture0.Size = new Size(80, 80);
             picture0.SizeMode = PictureBoxSizeMode.StretchImage;
             picture0.TabIndex = 63;
             picture0.TabStop = false;
             // 
+            // lblTiempoTranscurrido
+            // 
+            lblTiempoTranscurrido.AutoSize = true;
+            lblTiempoTranscurrido.BackColor = Color.Transparent;
+            lblTiempoTranscurrido.Font = new Font("Impact", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTiempoTranscurrido.ForeColor = Color.Transparent;
+            lblTiempoTranscurrido.Location = new Point(629, 20);
+            lblTiempoTranscurrido.Name = "lblTiempoTranscurrido";
+            lblTiempoTranscurrido.Size = new Size(85, 36);
+            lblTiempoTranscurrido.TabIndex = 84;
+            lblTiempoTranscurrido.Text = "00:00";
+            // 
             // Resolucion_2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1320, 604);
+            ClientSize = new Size(1364, 749);
+            Controls.Add(lblTiempoTranscurrido);
             Controls.Add(panel5);
+            Controls.Add(button1);
+            Controls.Add(btnReorganizar);
             Controls.Add(img18);
             Controls.Add(img16);
             Controls.Add(img19);
@@ -711,7 +716,9 @@
             Controls.Add(picture0);
             Controls.Add(Back);
             Name = "Resolucion_2";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Resolucion_2";
+            WindowState = FormWindowState.Maximized;
             panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pista1).EndInit();
             ((System.ComponentModel.ISupportInitialize)picture11).EndInit();
@@ -755,6 +762,7 @@
             ((System.ComponentModel.ISupportInitialize)img1).EndInit();
             ((System.ComponentModel.ISupportInitialize)picture0).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -762,7 +770,6 @@
         private Button Back;
         private Panel panel5;
         private PictureBox pista1;
-        private Button Volver;
         private PictureBox picture11;
         private Button button1;
         private PictureBox picture1;
@@ -805,5 +812,7 @@
         private PictureBox img11;
         private PictureBox img1;
         private PictureBox picture0;
+        private Label lblTiempoTranscurrido;
+        private System.Windows.Forms.Timer timerControl;
     }
 }

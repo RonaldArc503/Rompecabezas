@@ -52,6 +52,7 @@
             lblCarga.Size = new Size(122, 20);
             lblCarga.TabIndex = 0;
             lblCarga.Text = "Cargando al 0 %";
+            lblCarga.Click += lblCarga_Click;
             // 
             // lblLinkContinuar
             // 

@@ -66,6 +66,11 @@ namespace Rompecabezas
             }
             count++; // incrementa el contador 
         }
+
+        private void lblCarga_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

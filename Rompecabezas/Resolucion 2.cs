@@ -51,7 +51,7 @@ namespace Rompecabezas
             picture19.AllowDrop = true;
             picture20.AllowDrop = true;
 
-            //img es de donde se arrastraran
+            //img es de donde se arrastraran (lugar)
 
             img1.AllowDrop = true;
             img2.AllowDrop = true;
@@ -104,7 +104,7 @@ namespace Rompecabezas
         {
             origenPictureBox = (PictureBox)sender;
 
-            if (origenPictureBox.Image != null) //hacemos la condicion si origende la imagen no esta vacio osea si esta vacio no lo hara porque no hay nada
+            if (origenPictureBox.Image != null) //hacemos la condicion si origen de la imagen no esta vacio osea si esta vacio no lo hara porque no hay nada
             {
                 // Inicia el arraste de la imgg
                 origenPictureBox.DoDragDrop(origenPictureBox.Image, DragDropEffects.Move);
@@ -121,7 +121,7 @@ namespace Rompecabezas
         private void button1_Click(object sender, EventArgs e)
         {
 
-            // Mostrar la imagen de fondo como pista pero solamente se mostrara en movimiento par//
+            // Mostrar la imagen de fondo como pista pero solamente se mostrara al darle dos veces click//
 
             vecesprecionado++;
             if (vecesprecionado % 2 == 0)
@@ -141,9 +141,10 @@ namespace Rompecabezas
                     button1.Text = "Quedan 0 pistas";
                 }
             }
-            else // Si el movimiento es impar se ocultara, y al llegar al maximo de 7 clicks se ocultara el boton y no dejara dar mas pistas//
+            else  // Si el movimiento es impar se ocultara, y al llegar al maximo de 7 clicks se ocultara el boton y no dejara dar mas pistas//
             {
-                pista1.Visible = false;
+                    pista1.Visible = false;
+                                                
             }
 
 

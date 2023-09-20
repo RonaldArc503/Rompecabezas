@@ -123,6 +123,7 @@
             // 
             // Back
             // 
+            Back.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             Back.Location = new Point(1274, 718);
             Back.Name = "Back";
             Back.Size = new Size(89, 30);

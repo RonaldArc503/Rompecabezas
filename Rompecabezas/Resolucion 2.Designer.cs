@@ -843,9 +843,10 @@
             Controls.Add(img1);
             Controls.Add(picture0);
             Controls.Add(Back);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Resolucion_2";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Resolucion_2";
+            Text = "Medio";
             WindowState = FormWindowState.Maximized;
             Load += Resolucion_2_Load;
             panel5.ResumeLayout(false);

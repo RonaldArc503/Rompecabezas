@@ -823,9 +823,10 @@
             Controls.Add(img1);
             Controls.Add(picture0);
             Controls.Add(Back);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Resolucion";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Resolucion";
+            Text = "Fácil";
             WindowState = FormWindowState.Maximized;
             Load += Resolucion_Load;
             panel5.ResumeLayout(false);

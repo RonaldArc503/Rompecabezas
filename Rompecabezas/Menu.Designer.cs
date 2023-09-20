@@ -56,7 +56,7 @@
             panel2.BackColor = Color.FromArgb(0, 17, 35);
             panel2.Controls.Add(panel3);
             panel2.Controls.Add(panel1);
-            panel2.Location = new Point(25, 270);
+            panel2.Location = new Point(283, 480);
             panel2.Name = "panel2";
             panel2.Size = new Size(808, 10);
             panel2.TabIndex = 24;
@@ -92,7 +92,7 @@
             Rp2.FlatStyle = FlatStyle.Popup;
             Rp2.Font = new Font("Impact", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             Rp2.ForeColor = Color.White;
-            Rp2.Location = new Point(377, 304);
+            Rp2.Location = new Point(635, 514);
             Rp2.Name = "Rp2";
             Rp2.Size = new Size(109, 40);
             Rp2.TabIndex = 20;
@@ -106,7 +106,7 @@
             Rp3.FlatStyle = FlatStyle.Popup;
             Rp3.Font = new Font("Impact", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             Rp3.ForeColor = Color.White;
-            Rp3.Location = new Point(588, 304);
+            Rp3.Location = new Point(846, 514);
             Rp3.Name = "Rp3";
             Rp3.Size = new Size(116, 40);
             Rp3.TabIndex = 21;
@@ -118,7 +118,7 @@
             // 
             pictureBox2.BorderStyle = BorderStyle.Fixed3D;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(337, 108);
+            pictureBox2.Location = new Point(595, 318);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(190, 144);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -133,7 +133,7 @@
             Rp1.FlatStyle = FlatStyle.Popup;
             Rp1.Font = new Font("Impact", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             Rp1.ForeColor = Color.White;
-            Rp1.Location = new Point(147, 304);
+            Rp1.Location = new Point(405, 514);
             Rp1.Name = "Rp1";
             Rp1.Size = new Size(109, 40);
             Rp1.TabIndex = 19;
@@ -145,7 +145,7 @@
             // 
             pictureBox3.BorderStyle = BorderStyle.Fixed3D;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(563, 108);
+            pictureBox3.Location = new Point(821, 318);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(177, 144);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -157,7 +157,7 @@
             // 
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(111, 108);
+            pictureBox1.Location = new Point(369, 318);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(190, 144);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -169,7 +169,7 @@
             // 
             pictureBox4.BackColor = Color.Transparent;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(824, 347);
+            pictureBox4.Location = new Point(1302, 687);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(50, 50);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -181,7 +181,7 @@
             // 
             panel5.BackColor = Color.White;
             panel5.Controls.Add(panel6);
-            panel5.Location = new Point(25, 68);
+            panel5.Location = new Point(283, 287);
             panel5.Name = "panel5";
             panel5.Size = new Size(808, 10);
             panel5.TabIndex = 26;
@@ -200,8 +200,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(900, 409);
-            ControlBox = false;
+            ClientSize = new Size(1364, 749);
             Controls.Add(panel5);
             Controls.Add(pictureBox4);
             Controls.Add(panel2);
@@ -211,10 +210,12 @@
             Controls.Add(Rp1);
             Controls.Add(Rp3);
             Controls.Add(pictureBox2);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             IsMdiContainer = true;
             Name = "Menu";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Menu";
+            Text = "Menú";
+            WindowState = FormWindowState.Maximized;
             Load += Menu_Load;
             panel2.ResumeLayout(false);
             panel3.ResumeLayout(false);

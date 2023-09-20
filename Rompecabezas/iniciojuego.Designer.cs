@@ -92,10 +92,10 @@
             Controls.Add(lbTexto);
             Controls.Add(lblLinkContinuar);
             Controls.Add(lblCarga);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(2);
             Name = "iniciojuego";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "inicio";
             Load += iniciojuego_Load;
             ResumeLayout(false);
             PerformLayout();

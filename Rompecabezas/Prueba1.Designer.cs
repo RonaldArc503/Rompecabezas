@@ -845,9 +845,10 @@
             Controls.Add(img1);
             Controls.Add(picture0);
             FormBorderStyle = FormBorderStyle.Fixed3D;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Prueba1";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Rompecabezas Dificil";
+            Text = "Difícil";
             WindowState = FormWindowState.Maximized;
             Load += Prueba1_Load;
             ((System.ComponentModel.ISupportInitialize)picture0).EndInit();

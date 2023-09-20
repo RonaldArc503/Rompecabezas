@@ -15,12 +15,15 @@ namespace Rompecabezas
     { //private Image temporalImage;
         private PictureBox origenPictureBox; // PictureBox de origen o el que seleccionamos primero para el arrastre
         System.Diagnostics.Stopwatch timer = new System.Diagnostics.Stopwatch();
+
         SoundPlayer sonido = new SoundPlayer(Properties.Resources.MusicaJuegos);
+
         public Resolucion()
         {
             InitializeComponent();
             lblTiempoTranscurrido.Text = "00:00";
             sonido.Play();
+
         }
         private void Prueba1_Load(object sender, EventArgs e)
         {

@@ -46,7 +46,7 @@
             lblCarga.AutoSize = true;
             lblCarga.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
             lblCarga.ForeColor = SystemColors.ButtonHighlight;
-            lblCarga.Location = new Point(400, 430);
+            lblCarga.Location = new Point(393, 500);
             lblCarga.Margin = new Padding(2, 0, 2, 0);
             lblCarga.Name = "lblCarga";
             lblCarga.Size = new Size(122, 20);
@@ -60,7 +60,7 @@
             lblLinkContinuar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblLinkContinuar.ForeColor = SystemColors.ButtonHighlight;
             lblLinkContinuar.LinkColor = Color.White;
-            lblLinkContinuar.Location = new Point(417, 469);
+            lblLinkContinuar.Location = new Point(410, 539);
             lblLinkContinuar.Margin = new Padding(2, 0, 2, 0);
             lblLinkContinuar.Name = "lblLinkContinuar";
             lblLinkContinuar.Size = new Size(105, 21);
@@ -75,7 +75,7 @@
             lbTexto.AutoSize = true;
             lbTexto.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lbTexto.ForeColor = SystemColors.ButtonHighlight;
-            lbTexto.Location = new Point(599, 416);
+            lbTexto.Location = new Point(592, 486);
             lbTexto.Margin = new Padding(2, 0, 2, 0);
             lbTexto.Name = "lbTexto";
             lbTexto.Size = new Size(0, 21);
@@ -94,7 +94,7 @@
             Controls.Add(lblLinkContinuar);
             Controls.Add(lblCarga);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "iniciojuego";
             StartPosition = FormStartPosition.CenterScreen;
             Load += iniciojuego_Load;

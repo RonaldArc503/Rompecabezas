@@ -14,11 +14,15 @@ namespace Rompecabezas
 {
     public partial class Menu : Form
     {
+
+        SoundPlayer sonido = new SoundPlayer(Properties.Resources.MusicaMenu);
+
+
         public Menu()
         {
             InitializeComponent();
             // gbgrupo.BackColor = System.Drawing.Color.Transparent;
-            SoundPlayer sonido = new SoundPlayer();
+            sonido.Play();
         }
 
 
@@ -38,7 +42,7 @@ namespace Rompecabezas
             this.Close();
             Rp1.Show();
             R.Close();
-
+            sonido.Stop();  
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)  //1 img
@@ -48,7 +52,7 @@ namespace Rompecabezas
             this.Close();
             Rp1.Show();
             R.Close();
-
+            sonido.Stop();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)//2 img
@@ -58,7 +62,7 @@ namespace Rompecabezas
             this.Close();
             Rp2.Show();
             R.Close();
-
+            sonido.Stop();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e) //3 img

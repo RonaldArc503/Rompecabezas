@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,6 +18,7 @@ namespace Rompecabezas
         {
             InitializeComponent();
             // gbgrupo.BackColor = System.Drawing.Color.Transparent;
+            SoundPlayer sonido = new SoundPlayer();
         }
 
         private void Menu_Load(object sender, EventArgs e)

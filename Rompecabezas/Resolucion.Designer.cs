@@ -76,7 +76,6 @@
             img11 = new PictureBox();
             img1 = new PictureBox();
             picture0 = new PictureBox();
-            button2 = new Button();
             timerControl = new System.Windows.Forms.Timer(components);
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pista1).BeginInit();
@@ -124,7 +123,8 @@
             // 
             // Back
             // 
-            Back.Location = new Point(0, 0);
+            Back.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            Back.Location = new Point(1286, 725);
             Back.Name = "Back";
             Back.Size = new Size(75, 23);
             Back.TabIndex = 0;
@@ -494,6 +494,7 @@
             button1.TabIndex = 87;
             button1.Text = "Pistas 3";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // btnReorganizar
             // 
@@ -504,6 +505,7 @@
             btnReorganizar.TabIndex = 86;
             btnReorganizar.Text = "Empezar";
             btnReorganizar.UseVisualStyleBackColor = true;
+            btnReorganizar.Click += btnReorganizar_Click;
             // 
             // img18
             // 
@@ -785,16 +787,6 @@
             picture0.DragEnter += PictureBox_DragEnter;
             picture0.MouseDown += PictureBox_MouseDown;
             // 
-            // button2
-            // 
-            button2.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.Location = new Point(1274, 719);
-            button2.Name = "button2";
-            button2.Size = new Size(89, 30);
-            button2.TabIndex = 109;
-            button2.Text = "Atrás";
-            button2.UseVisualStyleBackColor = true;
-            // 
             // timerControl
             // 
             timerControl.Interval = 1000;
@@ -806,7 +798,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1364, 749);
-            Controls.Add(button2);
             Controls.Add(lblTiempoTranscurrido);
             Controls.Add(panel5);
             Controls.Add(button1);
@@ -931,7 +922,6 @@
         private PictureBox img11;
         private PictureBox img1;
         private PictureBox picture0;
-        private Button button2;
         private System.Windows.Forms.Timer timerControl;
     }
 }

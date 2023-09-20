@@ -239,7 +239,13 @@ namespace Rompecabezas
 
         }
 
-        private void btnReorganizar_Click_1(object sender, EventArgs e)
+
+        private void Resolucion_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReorganizar_Click(object sender, EventArgs e)
         {
             iniciarjuego();
             timerControl.Enabled = true;
@@ -262,12 +268,6 @@ namespace Rompecabezas
                 pictureBoxes[i].Image = imagenesAleatorias[i];
 
             }
-        }
-
-
-        private void Resolucion_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

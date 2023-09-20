@@ -42,7 +42,6 @@
             pictureBox4 = new PictureBox();
             panel5 = new Panel();
             panel6 = new Panel();
-            pictureBox5 = new PictureBox();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -50,7 +49,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // panel2
@@ -169,9 +167,9 @@
             // 
             pictureBox4.BackColor = Color.Transparent;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(830, 304);
+            pictureBox4.Location = new Point(824, 347);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(46, 46);
+            pictureBox4.Size = new Size(50, 50);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 22;
             pictureBox4.TabStop = false;
@@ -194,17 +192,6 @@
             panel6.Size = new Size(807, 300);
             panel6.TabIndex = 22;
             // 
-            // pictureBox5
-            // 
-            pictureBox5.BackColor = Color.Transparent;
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(759, 300);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(50, 50);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 28;
-            pictureBox5.TabStop = false;
-            // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -213,7 +200,6 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(900, 409);
             ControlBox = false;
-            Controls.Add(pictureBox5);
             Controls.Add(panel5);
             Controls.Add(pictureBox4);
             Controls.Add(panel2);
@@ -234,7 +220,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
         }
 
@@ -252,6 +237,5 @@
         private PictureBox pictureBox4;
         private Panel panel5;
         private Panel panel6;
-        private PictureBox pictureBox5;
     }
 }

@@ -92,6 +92,8 @@ namespace Rompecabezas
             Prueba1 Rp3 = new Prueba1();
             Rp3.Show();
             Hide();
+
+            //s
         }
     }
 }

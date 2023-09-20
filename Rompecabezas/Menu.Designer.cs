@@ -169,7 +169,7 @@
             // 
             pictureBox4.BackColor = Color.Transparent;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(1302, 687);
+            pictureBox4.Location = new Point(1285, 31);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(50, 50);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -216,7 +216,6 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Menú";
             WindowState = FormWindowState.Maximized;
-            Load += Menu_Load;
             panel2.ResumeLayout(false);
             panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

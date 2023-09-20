@@ -47,8 +47,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(800, 450);
-            ControlBox = false;
+            ClientSize = new Size(284, 261);
             Controls.Add(Back);
             Name = "Resolucion_2";
             Text = "Resolucion_2";

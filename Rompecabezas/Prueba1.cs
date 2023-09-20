@@ -100,7 +100,7 @@ namespace Rompecabezas
         {
             PictureBox laimgPictureBox = (PictureBox)sender;
 
-            // Se hace elintercambio de origen a donde la mandaremos
+            // Se hace el intercambio de origen a donde la mandaremos
             Image imagentemporal = laimgPictureBox.Image;
             laimgPictureBox.Image = origenPictureBox.Image;
             origenPictureBox.Image = imagentemporal;
@@ -110,7 +110,7 @@ namespace Rompecabezas
         {
             origenPictureBox = (PictureBox)sender;
 
-            if (origenPictureBox.Image != null) //hacemos la condicion si origendelaimagen no esta vacio osea si esta vacio no lo hara porq no hay nada
+            if (origenPictureBox.Image != null) //hacemos la condicion si origende la imagen no esta vacio osea si esta vacio no lo hara porque no hay nada
             {
                 // Inicia el arraste de la imgg
                 origenPictureBox.DoDragDrop(origenPictureBox.Image, DragDropEffects.Move);
@@ -243,7 +243,7 @@ namespace Rompecabezas
                 timerControl.Enabled = false;
                 actualizartiempo();
                 BlockGame();
-                MessageBox.Show("se acavo el tiempo \n regresar al menu ", "puzzle play");
+                MessageBox.Show("se acabo el tiempo \n regresar al menu ", "puzzle play");
                 this.Hide();
                 Menu menuPrincipal = new Menu();
                 menuPrincipal.Show();
@@ -256,6 +256,13 @@ namespace Rompecabezas
             int segundos = segundosTranscurridos % 60;
             lblTiempoTranscurrido.Text = string.Format("{0:00}:{1:00}", minutos, segundos);
 
+        }
+
+        private void Volver_Click(object sender, EventArgs e)
+        {
+            Menu Mn = new Menu();
+            Mn.Show();
+            Hide();
         }
     }
 }

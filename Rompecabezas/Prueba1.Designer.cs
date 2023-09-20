@@ -805,13 +805,16 @@
             // 
             // Volver
             // 
+            Volver.BackColor = Color.FromArgb(0, 0, 64);
+            Volver.FlatStyle = FlatStyle.Flat;
             Volver.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            Volver.Location = new Point(1261, 708);
+            Volver.ForeColor = Color.Cyan;
+            Volver.Location = new Point(12, 12);
             Volver.Name = "Volver";
             Volver.Size = new Size(87, 25);
             Volver.TabIndex = 45;
             Volver.Text = "Atrás";
-            Volver.UseVisualStyleBackColor = true;
+            Volver.UseVisualStyleBackColor = false;
             Volver.Click += Volver_Click;
             // 
             // button2

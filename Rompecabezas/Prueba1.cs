@@ -267,7 +267,7 @@ namespace Rompecabezas
         {
             Menu Mn = new Menu();
             Mn.Show();
-            Hide();
+            this.Close();
         }
 
         private void fin_Click(object sender, EventArgs e)

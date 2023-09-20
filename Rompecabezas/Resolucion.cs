@@ -234,7 +234,7 @@ namespace Rompecabezas
         { //Volver al menu principal//
             Menu Mn = new Menu();
             Mn.Show();
-            Hide();
+            this.Close();
         }
 
         private void Resolucion_2_Load(object sender, EventArgs e)

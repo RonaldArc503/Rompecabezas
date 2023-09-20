@@ -125,14 +125,16 @@
             // 
             // Back
             // 
+            Back.BackColor = Color.FromArgb(0, 0, 64);
+            Back.FlatStyle = FlatStyle.Flat;
             Back.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            Back.ForeColor = SystemColors.ActiveCaptionText;
-            Back.Location = new Point(1264, 708);
+            Back.ForeColor = Color.Aqua;
+            Back.Location = new Point(12, 12);
             Back.Name = "Back";
             Back.Size = new Size(88, 29);
             Back.TabIndex = 0;
             Back.Text = "Atrás";
-            Back.UseVisualStyleBackColor = true;
+            Back.UseVisualStyleBackColor = false;
             Back.Click += Back_Click;
             // 
             // panel5

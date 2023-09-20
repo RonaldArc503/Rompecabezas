@@ -46,9 +46,10 @@
             lblCarga.AutoSize = true;
             lblCarga.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
             lblCarga.ForeColor = SystemColors.ButtonHighlight;
-            lblCarga.Location = new Point(596, 693);
+            lblCarga.Location = new Point(400, 430);
+            lblCarga.Margin = new Padding(2, 0, 2, 0);
             lblCarga.Name = "lblCarga";
-            lblCarga.Size = new Size(182, 30);
+            lblCarga.Size = new Size(122, 20);
             lblCarga.TabIndex = 0;
             lblCarga.Text = "Cargando al 0 %";
             lblCarga.Click += lblCarga_Click;
@@ -59,9 +60,10 @@
             lblLinkContinuar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblLinkContinuar.ForeColor = SystemColors.ButtonHighlight;
             lblLinkContinuar.LinkColor = Color.White;
-            lblLinkContinuar.Location = new Point(612, 743);
+            lblLinkContinuar.Location = new Point(417, 469);
+            lblLinkContinuar.Margin = new Padding(2, 0, 2, 0);
             lblLinkContinuar.Name = "lblLinkContinuar";
-            lblLinkContinuar.Size = new Size(156, 32);
+            lblLinkContinuar.Size = new Size(105, 21);
             lblLinkContinuar.TabIndex = 1;
             lblLinkContinuar.TabStop = true;
             lblLinkContinuar.Text = "CONTINUAR";
@@ -73,24 +75,26 @@
             lbTexto.AutoSize = true;
             lbTexto.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lbTexto.ForeColor = SystemColors.ButtonHighlight;
-            lbTexto.Location = new Point(856, 693);
+            lbTexto.Location = new Point(599, 416);
+            lbTexto.Margin = new Padding(2, 0, 2, 0);
             lbTexto.Name = "lbTexto";
-            lbTexto.Size = new Size(0, 32);
+            lbTexto.Size = new Size(0, 21);
             lbTexto.TabIndex = 2;
             // 
             // iniciojuego
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveBorder;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1359, 813);
+            ClientSize = new Size(951, 576);
             ControlBox = false;
             Controls.Add(lbTexto);
             Controls.Add(lblLinkContinuar);
             Controls.Add(lblCarga);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(2, 2, 2, 2);
             Name = "iniciojuego";
             StartPosition = FormStartPosition.CenterScreen;
             Load += iniciojuego_Load;

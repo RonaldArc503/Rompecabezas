@@ -843,6 +843,7 @@
             Controls.Add(img1);
             Controls.Add(picture0);
             Controls.Add(Back);
+            ForeColor = SystemColors.ControlLight;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Resolucion_2";
             StartPosition = FormStartPosition.CenterScreen;

@@ -143,8 +143,8 @@ namespace Rompecabezas
             }
             else  // Si el movimiento es impar se ocultara, y al llegar al maximo de 7 clicks se ocultara el boton y no dejara dar mas pistas//
             {
-                    pista1.Visible = false;
-                                                
+                pista1.Visible = false;
+
             }
 
 

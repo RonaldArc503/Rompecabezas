@@ -77,6 +77,7 @@
             timerControl = new System.Windows.Forms.Timer(components);
             lblTiempoTranscurrido = new Label();
             Volver = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)picture0).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picture1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picture2).BeginInit();
@@ -126,7 +127,7 @@
             picture0.BackColor = Color.FromArgb(29, 160, 190);
             picture0.BorderStyle = BorderStyle.Fixed3D;
             picture0.Image = (Image)resources.GetObject("picture0.Image");
-            picture0.Location = new Point(271, 53);
+            picture0.Location = new Point(261, 165);
             picture0.Name = "picture0";
             picture0.Size = new Size(80, 80);
             picture0.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -441,7 +442,7 @@
             img1.BackColor = Color.FromArgb(29, 160, 190);
             img1.BorderStyle = BorderStyle.Fixed3D;
             img1.Image = (Image)resources.GetObject("img1.Image");
-            img1.Location = new Point(357, 53);
+            img1.Location = new Point(347, 165);
             img1.Name = "img1";
             img1.Size = new Size(80, 80);
             img1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -456,7 +457,7 @@
             img11.BackColor = Color.FromArgb(29, 160, 190);
             img11.BorderStyle = BorderStyle.Fixed3D;
             img11.Image = (Image)resources.GetObject("img11.Image");
-            img11.Location = new Point(1050, 53);
+            img11.Location = new Point(1071, 165);
             img11.Name = "img11";
             img11.Size = new Size(80, 80);
             img11.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -471,7 +472,7 @@
             img2.BackColor = Color.FromArgb(29, 160, 190);
             img2.BorderStyle = BorderStyle.Fixed3D;
             img2.Image = (Image)resources.GetObject("img2.Image");
-            img2.Location = new Point(271, 139);
+            img2.Location = new Point(261, 251);
             img2.Name = "img2";
             img2.Size = new Size(80, 80);
             img2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -486,7 +487,7 @@
             img3.BackColor = Color.FromArgb(29, 160, 190);
             img3.BorderStyle = BorderStyle.Fixed3D;
             img3.Image = (Image)resources.GetObject("img3.Image");
-            img3.Location = new Point(357, 139);
+            img3.Location = new Point(347, 251);
             img3.Name = "img3";
             img3.Size = new Size(80, 80);
             img3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -501,7 +502,7 @@
             img13.BackColor = Color.FromArgb(29, 160, 190);
             img13.BorderStyle = BorderStyle.Fixed3D;
             img13.Image = (Image)resources.GetObject("img13.Image");
-            img13.Location = new Point(1050, 139);
+            img13.Location = new Point(1071, 251);
             img13.Name = "img13";
             img13.Size = new Size(80, 80);
             img13.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -516,7 +517,7 @@
             img15.BackColor = Color.FromArgb(29, 160, 190);
             img15.BorderStyle = BorderStyle.Fixed3D;
             img15.Image = (Image)resources.GetObject("img15.Image");
-            img15.Location = new Point(1050, 225);
+            img15.Location = new Point(1071, 337);
             img15.Name = "img15";
             img15.Size = new Size(80, 80);
             img15.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -531,7 +532,7 @@
             img5.BackColor = Color.FromArgb(29, 160, 190);
             img5.BorderStyle = BorderStyle.Fixed3D;
             img5.Image = (Image)resources.GetObject("img5.Image");
-            img5.Location = new Point(357, 225);
+            img5.Location = new Point(347, 337);
             img5.Name = "img5";
             img5.Size = new Size(80, 80);
             img5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -546,7 +547,7 @@
             img4.BackColor = Color.FromArgb(29, 160, 190);
             img4.BorderStyle = BorderStyle.Fixed3D;
             img4.Image = (Image)resources.GetObject("img4.Image");
-            img4.Location = new Point(271, 225);
+            img4.Location = new Point(261, 337);
             img4.Name = "img4";
             img4.Size = new Size(80, 80);
             img4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -561,7 +562,7 @@
             img14.BackColor = Color.FromArgb(29, 160, 190);
             img14.BorderStyle = BorderStyle.Fixed3D;
             img14.Image = (Image)resources.GetObject("img14.Image");
-            img14.Location = new Point(964, 225);
+            img14.Location = new Point(985, 337);
             img14.Name = "img14";
             img14.Size = new Size(80, 80);
             img14.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -576,7 +577,7 @@
             img12.BackColor = Color.FromArgb(29, 160, 190);
             img12.BorderStyle = BorderStyle.Fixed3D;
             img12.Image = (Image)resources.GetObject("img12.Image");
-            img12.Location = new Point(964, 139);
+            img12.Location = new Point(985, 251);
             img12.Name = "img12";
             img12.Size = new Size(80, 80);
             img12.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -591,7 +592,7 @@
             img10.BackColor = Color.FromArgb(29, 160, 190);
             img10.BorderStyle = BorderStyle.Fixed3D;
             img10.Image = (Image)resources.GetObject("img10.Image");
-            img10.Location = new Point(964, 53);
+            img10.Location = new Point(985, 165);
             img10.Name = "img10";
             img10.Size = new Size(80, 80);
             img10.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -606,7 +607,7 @@
             img8.BackColor = Color.FromArgb(29, 160, 190);
             img8.BorderStyle = BorderStyle.Fixed3D;
             img8.Image = (Image)resources.GetObject("img8.Image");
-            img8.Location = new Point(271, 397);
+            img8.Location = new Point(261, 509);
             img8.Name = "img8";
             img8.Size = new Size(80, 80);
             img8.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -621,7 +622,7 @@
             img6.BackColor = Color.FromArgb(29, 160, 190);
             img6.BorderStyle = BorderStyle.Fixed3D;
             img6.Image = (Image)resources.GetObject("img6.Image");
-            img6.Location = new Point(271, 311);
+            img6.Location = new Point(261, 423);
             img6.Name = "img6";
             img6.Size = new Size(80, 80);
             img6.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -636,7 +637,7 @@
             img9.BackColor = Color.FromArgb(29, 160, 190);
             img9.BorderStyle = BorderStyle.Fixed3D;
             img9.Image = (Image)resources.GetObject("img9.Image");
-            img9.Location = new Point(357, 397);
+            img9.Location = new Point(347, 509);
             img9.Name = "img9";
             img9.Size = new Size(80, 80);
             img9.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -651,7 +652,7 @@
             img7.BackColor = Color.FromArgb(29, 160, 190);
             img7.BorderStyle = BorderStyle.Fixed3D;
             img7.Image = (Image)resources.GetObject("img7.Image");
-            img7.Location = new Point(357, 311);
+            img7.Location = new Point(347, 423);
             img7.Name = "img7";
             img7.Size = new Size(80, 80);
             img7.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -666,7 +667,7 @@
             img18.BackColor = Color.FromArgb(29, 160, 190);
             img18.BorderStyle = BorderStyle.Fixed3D;
             img18.Image = (Image)resources.GetObject("img18.Image");
-            img18.Location = new Point(964, 397);
+            img18.Location = new Point(985, 509);
             img18.Name = "img18";
             img18.Size = new Size(80, 80);
             img18.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -681,7 +682,7 @@
             img16.BackColor = Color.FromArgb(29, 160, 190);
             img16.BorderStyle = BorderStyle.Fixed3D;
             img16.Image = (Image)resources.GetObject("img16.Image");
-            img16.Location = new Point(964, 311);
+            img16.Location = new Point(985, 423);
             img16.Name = "img16";
             img16.Size = new Size(80, 80);
             img16.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -696,7 +697,7 @@
             img19.BackColor = Color.FromArgb(29, 160, 190);
             img19.BorderStyle = BorderStyle.Fixed3D;
             img19.Image = (Image)resources.GetObject("img19.Image");
-            img19.Location = new Point(1050, 397);
+            img19.Location = new Point(1071, 509);
             img19.Name = "img19";
             img19.Size = new Size(80, 80);
             img19.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -711,7 +712,7 @@
             img17.BackColor = Color.FromArgb(29, 160, 190);
             img17.BorderStyle = BorderStyle.Fixed3D;
             img17.Image = (Image)resources.GetObject("img17.Image");
-            img17.Location = new Point(1050, 311);
+            img17.Location = new Point(1071, 423);
             img17.Name = "img17";
             img17.Size = new Size(80, 80);
             img17.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -745,7 +746,7 @@
             panel5.Controls.Add(picture18);
             panel5.Controls.Add(picture19);
             panel5.Controls.Add(picture20);
-            panel5.Location = new Point(525, 53);
+            panel5.Location = new Point(525, 165);
             panel5.Margin = new Padding(0);
             panel5.Name = "panel5";
             panel5.Size = new Size(366, 440);
@@ -765,7 +766,7 @@
             // btnReorganizar
             // 
             btnReorganizar.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btnReorganizar.Location = new Point(525, 522);
+            btnReorganizar.Location = new Point(525, 626);
             btnReorganizar.Name = "btnReorganizar";
             btnReorganizar.Size = new Size(120, 52);
             btnReorganizar.TabIndex = 42;
@@ -776,7 +777,7 @@
             // button1
             // 
             button1.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(771, 522);
+            button1.Location = new Point(771, 626);
             button1.Name = "button1";
             button1.Size = new Size(120, 52);
             button1.TabIndex = 43;
@@ -795,7 +796,7 @@
             lblTiempoTranscurrido.BackColor = Color.Transparent;
             lblTiempoTranscurrido.Font = new Font("Impact", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblTiempoTranscurrido.ForeColor = Color.Transparent;
-            lblTiempoTranscurrido.Location = new Point(665, 9);
+            lblTiempoTranscurrido.Location = new Point(672, 90);
             lblTiempoTranscurrido.Name = "lblTiempoTranscurrido";
             lblTiempoTranscurrido.Size = new Size(85, 36);
             lblTiempoTranscurrido.TabIndex = 44;
@@ -811,6 +812,23 @@
             Volver.Text = "Atrás";
             Volver.UseVisualStyleBackColor = true;
             Volver.Click += Volver_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Black;
+            button2.BackgroundImageLayout = ImageLayout.None;
+            button2.Enabled = false;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.ForeColor = SystemColors.ButtonFace;
+            button2.Location = new Point(643, 57);
+            button2.Name = "button2";
+            button2.Size = new Size(144, 69);
+            button2.TabIndex = 46;
+            button2.Text = "Tiempo";
+            button2.TextAlign = ContentAlignment.TopCenter;
+            button2.UseVisualStyleBackColor = false;
             // 
             // Prueba1
             // 
@@ -844,6 +862,7 @@
             Controls.Add(img11);
             Controls.Add(img1);
             Controls.Add(picture0);
+            Controls.Add(button2);
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Prueba1";
@@ -949,5 +968,6 @@
         private System.Windows.Forms.Timer timerControl;
         private Label lblTiempoTranscurrido;
         private Button Volver;
+        private Button button2;
     }
 }

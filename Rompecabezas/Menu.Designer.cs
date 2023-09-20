@@ -29,116 +29,181 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
-            pictureBox3 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            Rp1 = new Button();
+            panel2 = new Panel();
+            panel3 = new Panel();
+            panel4 = new Panel();
+            panel1 = new Panel();
             Rp2 = new Button();
             Rp3 = new Button();
-            btncerrar = new Button();
-            gbgrupo = new GroupBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            pictureBox2 = new PictureBox();
+            Rp1 = new Button();
+            pictureBox3 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            panel5 = new Panel();
+            panel6 = new Panel();
+            pictureBox5 = new PictureBox();
+            panel2.SuspendLayout();
+            panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            gbgrupo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox3
+            // panel2
             // 
-            pictureBox3.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(490, 38);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(139, 120);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 5;
-            pictureBox3.TabStop = false;
+            panel2.BackColor = Color.FromArgb(0, 17, 35);
+            panel2.Controls.Add(panel3);
+            panel2.Controls.Add(panel1);
+            panel2.Location = new Point(25, 270);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(808, 10);
+            panel2.TabIndex = 24;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.White;
+            panel3.Controls.Add(panel4);
+            panel3.Location = new Point(0, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(808, 10);
+            panel3.TabIndex = 25;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.FromArgb(18, 26, 53);
+            panel4.Location = new Point(15, 14);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(807, 300);
+            panel4.TabIndex = 22;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(18, 26, 53);
+            panel1.Location = new Point(15, 14);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(807, 300);
+            panel1.TabIndex = 22;
+            // 
+            // Rp2
+            // 
+            Rp2.BackColor = Color.FromArgb(0, 0, 21);
+            Rp2.FlatStyle = FlatStyle.Popup;
+            Rp2.Font = new Font("Impact", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            Rp2.ForeColor = Color.White;
+            Rp2.Location = new Point(377, 304);
+            Rp2.Name = "Rp2";
+            Rp2.Size = new Size(109, 40);
+            Rp2.TabIndex = 20;
+            Rp2.Text = "Medio";
+            Rp2.UseVisualStyleBackColor = false;
+            // 
+            // Rp3
+            // 
+            Rp3.BackColor = Color.FromArgb(0, 0, 21);
+            Rp3.FlatStyle = FlatStyle.Popup;
+            Rp3.Font = new Font("Impact", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            Rp3.ForeColor = Color.White;
+            Rp3.Location = new Point(588, 304);
+            Rp3.Name = "Rp3";
+            Rp3.Size = new Size(116, 40);
+            Rp3.TabIndex = 21;
+            Rp3.Text = "Difícil";
+            Rp3.UseVisualStyleBackColor = false;
             // 
             // pictureBox2
             // 
             pictureBox2.BorderStyle = BorderStyle.Fixed3D;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(304, 38);
+            pictureBox2.Location = new Point(337, 108);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(139, 120);
+            pictureBox2.Size = new Size(190, 144);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 4;
+            pictureBox2.TabIndex = 17;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
+            // 
+            // Rp1
+            // 
+            Rp1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            Rp1.BackColor = Color.FromArgb(0, 0, 21);
+            Rp1.FlatStyle = FlatStyle.Popup;
+            Rp1.Font = new Font("Impact", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            Rp1.ForeColor = Color.White;
+            Rp1.Location = new Point(147, 304);
+            Rp1.Name = "Rp1";
+            Rp1.Size = new Size(109, 40);
+            Rp1.TabIndex = 19;
+            Rp1.Text = "Fácil";
+            Rp1.UseVisualStyleBackColor = false;
+            Rp1.Click += Rp1_Click_1;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(563, 108);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(177, 144);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 18;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(104, 38);
+            pictureBox1.Location = new Point(111, 108);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(139, 120);
+            pictureBox1.Size = new Size(190, 144);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 3;
+            pictureBox1.TabIndex = 16;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
-            // Rp1
+            // pictureBox4
             // 
-            Rp1.ForeColor = SystemColors.ActiveCaptionText;
-            Rp1.Location = new Point(120, 190);
-            Rp1.Name = "Rp1";
-            Rp1.Size = new Size(109, 40);
-            Rp1.TabIndex = 6;
-            Rp1.Text = "Fácil";
-            Rp1.UseVisualStyleBackColor = true;
-            Rp1.Click += Rp1_Click;
+            pictureBox4.BackColor = Color.Transparent;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(830, 304);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(46, 46);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 22;
+            pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click_1;
             // 
-            // Rp2
+            // panel5
             // 
-            Rp2.ForeColor = SystemColors.ActiveCaptionText;
-            Rp2.Location = new Point(321, 190);
-            Rp2.Name = "Rp2";
-            Rp2.Size = new Size(109, 40);
-            Rp2.TabIndex = 7;
-            Rp2.Text = "Medio";
-            Rp2.UseVisualStyleBackColor = true;
-            Rp2.Click += Rp2_Click;
+            panel5.BackColor = Color.White;
+            panel5.Controls.Add(panel6);
+            panel5.Location = new Point(25, 68);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(808, 10);
+            panel5.TabIndex = 26;
             // 
-            // Rp3
+            // panel6
             // 
-            Rp3.ForeColor = SystemColors.ActiveCaptionText;
-            Rp3.Location = new Point(496, 190);
-            Rp3.Name = "Rp3";
-            Rp3.Size = new Size(116, 40);
-            Rp3.TabIndex = 8;
-            Rp3.Text = "Difícil";
-            Rp3.UseVisualStyleBackColor = true;
-            Rp3.Click += Rp3_Click;
+            panel6.BackColor = Color.FromArgb(18, 26, 53);
+            panel6.Location = new Point(15, 14);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(807, 300);
+            panel6.TabIndex = 22;
             // 
-            // btncerrar
+            // pictureBox5
             // 
-            btncerrar.Location = new Point(825, 445);
-            btncerrar.Name = "btncerrar";
-            btncerrar.Size = new Size(141, 58);
-            btncerrar.TabIndex = 12;
-            btncerrar.Text = "Cerrar";
-            btncerrar.UseVisualStyleBackColor = true;
-            btncerrar.Click += Close_Click;
-            // 
-            // gbgrupo
-            // 
-            gbgrupo.BackColor = SystemColors.ActiveBorder;
-            gbgrupo.BackgroundImage = (Image)resources.GetObject("gbgrupo.BackgroundImage");
-            gbgrupo.Controls.Add(pictureBox3);
-            gbgrupo.Controls.Add(pictureBox1);
-            gbgrupo.Controls.Add(Rp3);
-            gbgrupo.Controls.Add(Rp2);
-            gbgrupo.Controls.Add(pictureBox2);
-            gbgrupo.Controls.Add(Rp1);
-            gbgrupo.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            gbgrupo.ForeColor = SystemColors.ButtonFace;
-            gbgrupo.Location = new Point(188, 119);
-            gbgrupo.Margin = new Padding(2, 2, 2, 2);
-            gbgrupo.Name = "gbgrupo";
-            gbgrupo.Padding = new Padding(2, 2, 2, 2);
-            gbgrupo.Size = new Size(743, 257);
-            gbgrupo.TabIndex = 14;
-            gbgrupo.TabStop = false;
-            gbgrupo.Text = "niveles de juego";
+            pictureBox5.BackColor = Color.Transparent;
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(759, 300);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(50, 50);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 28;
+            pictureBox5.TabStop = false;
             // 
             // Menu
             // 
@@ -146,30 +211,47 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(992, 524);
+            ClientSize = new Size(900, 409);
             ControlBox = false;
-            Controls.Add(gbgrupo);
-            Controls.Add(btncerrar);
+            Controls.Add(pictureBox5);
+            Controls.Add(panel5);
+            Controls.Add(pictureBox4);
+            Controls.Add(panel2);
+            Controls.Add(pictureBox1);
+            Controls.Add(pictureBox3);
+            Controls.Add(Rp2);
+            Controls.Add(Rp1);
+            Controls.Add(Rp3);
+            Controls.Add(pictureBox2);
             IsMdiContainer = true;
             Name = "Menu";
             Text = "Menu";
             Load += Menu_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            panel2.ResumeLayout(false);
+            panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            gbgrupo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox1;
-        private Button Rp1;
+        private Panel panel2;
+        private Panel panel3;
+        private Panel panel4;
+        private Panel panel1;
         private Button Rp2;
         private Button Rp3;
-        private Button btncerrar;
-        private GroupBox gbgrupo;
+        private PictureBox pictureBox2;
+        private Button Rp1;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox4;
+        private Panel panel5;
+        private Panel panel6;
+        private PictureBox pictureBox5;
     }
 }

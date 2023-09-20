@@ -152,7 +152,7 @@ namespace Rompecabezas
         private void button1_Click(object sender, EventArgs e)
         {
 
-
+            // Mostrar la imagen de fondo como pista pero solamente se mostrara en movimiento par//
 
             vecesprecionado++;
             if (vecesprecionado % 2 == 0)
@@ -172,7 +172,7 @@ namespace Rompecabezas
                     button1.Text = "Quedan 0 pistas";
                 }
             }
-            else
+            else // Si el movimiento es impar se ocultara, y al llegar al maximo de 7 clicks se ocultara el boton y no dejara dar mas pistas//
             {
                 pista1.Visible = false;
             }
@@ -186,7 +186,7 @@ namespace Rompecabezas
         }
 
 
-        private void BlockGame()
+        private void BlockGame() // Permitimos que todas las imagenes se puedan arrastrar y soltar//
         {
             img1.AllowDrop = false;
             img2.AllowDrop = false;
@@ -236,6 +236,7 @@ namespace Rompecabezas
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            //configuracion del tiempo para poder resolver el puzzle//
             segundosTranscurridos++;
             actualizartiempo();
             if (segundosTranscurridos >= 180)

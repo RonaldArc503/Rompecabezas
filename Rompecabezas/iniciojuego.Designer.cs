@@ -92,8 +92,9 @@
             Controls.Add(lbTexto);
             Controls.Add(lblLinkContinuar);
             Controls.Add(lblCarga);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "iniciojuego";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "inicio";
             Load += iniciojuego_Load;
             ResumeLayout(false);

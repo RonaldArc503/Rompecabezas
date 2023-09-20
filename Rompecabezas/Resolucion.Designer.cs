@@ -124,9 +124,9 @@
             // Back
             // 
             Back.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            Back.Location = new Point(1286, 725);
+            Back.Location = new Point(1273, 710);
             Back.Name = "Back";
-            Back.Size = new Size(75, 23);
+            Back.Size = new Size(79, 27);
             Back.TabIndex = 0;
             Back.Text = "Atrás";
             Back.UseVisualStyleBackColor = true;
@@ -146,7 +146,7 @@
             // 
             // panel5
             // 
-            panel5.BackColor = SystemColors.Desktop;
+            panel5.BackColor = Color.FromArgb(0, 0, 64);
             panel5.Controls.Add(pista1);
             panel5.Controls.Add(picture11);
             panel5.Controls.Add(picture1);

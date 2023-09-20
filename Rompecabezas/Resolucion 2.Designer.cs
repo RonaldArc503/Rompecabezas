@@ -124,9 +124,9 @@
             // Back
             // 
             Back.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            Back.Location = new Point(1274, 718);
+            Back.Location = new Point(1264, 708);
             Back.Name = "Back";
-            Back.Size = new Size(89, 30);
+            Back.Size = new Size(88, 29);
             Back.TabIndex = 0;
             Back.Text = "Atrás";
             Back.UseVisualStyleBackColor = true;

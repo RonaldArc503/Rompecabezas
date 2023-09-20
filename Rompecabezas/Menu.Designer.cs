@@ -213,6 +213,7 @@
             Controls.Add(pictureBox2);
             IsMdiContainer = true;
             Name = "Menu";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Menu";
             Load += Menu_Load;
             panel2.ResumeLayout(false);

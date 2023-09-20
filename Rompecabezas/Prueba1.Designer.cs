@@ -803,7 +803,8 @@
             // 
             // Volver
             // 
-            Volver.Location = new Point(1274, 720);
+            Volver.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            Volver.Location = new Point(1261, 708);
             Volver.Name = "Volver";
             Volver.Size = new Size(87, 25);
             Volver.TabIndex = 45;
@@ -845,6 +846,7 @@
             Controls.Add(picture0);
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Name = "Prueba1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Rompecabezas Dificil";
             WindowState = FormWindowState.Maximized;
             Load += Prueba1_Load;

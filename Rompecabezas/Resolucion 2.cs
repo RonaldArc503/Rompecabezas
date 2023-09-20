@@ -22,6 +22,7 @@ namespace Rompecabezas
         {
             InitializeComponent();
             lblTiempoTranscurrido.Text = "00:00";
+            sonido.Play();
         }
         private void Prueba1_Load(object sender, EventArgs e)
         {
